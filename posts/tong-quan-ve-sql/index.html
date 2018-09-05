@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    
+    <title>Tran Duc Trung Blog | Home</title>
+
+    
+    <link rel="icon" href="/img/core-img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="agency.min.css" rel="stylesheet">
+    <style type="text/css">
+      table, td, th {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      th, td {
+          text-align: center;
+      }
+      .cedo{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        margin-left: 10px; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: inline;
+      }
+
+      .cedo-1{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: block;
+      }
+
+      p.content-1{
+        font-family: 'Roboto', sans-serif;
+        color: #5a5a5a;
+      }
+
+      .content-2 li, .note {
+        margin-top: 10px;
+        text-indent: 15px; 
+        font-size: 16px; 
+        color: #5a5a5a;
+      }
+    </style>
+</head>
+	<body>
+	    
+	    
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+
+<header class="header-area">
+
+  
+  <div class="top-header-area d-flex justify-content-between align-items-center">
+    
+    <div class="contact-info">
+      <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+      <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+    </div>
+    
+    <div class="follow-us">
+      <span>Follow me</span>
+      <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  
+  <div class="clever-main-menu">
+    <div class="classy-nav-container breakpoint-off">
+      
+      <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+        
+        <a class="nav-brand" href="/"><img src="img/core-img/logo.png" alt=""></a>
+
+        
+        <div class="classy-menu">
+          
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          
+          <div class="classynav">
+            <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="about">ABOUT ME</a>
+              <li><a href="posts">POSTS</a></li>
+              <li><a href="contact">CONTACT ME</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+	    
+
+	    
+	    <!-- ##### Breadcumb Area Start ##### -->
+
+<div class="breadcumb-area">
+  <!-- Breadcumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="/posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tổng quan về SQL</li>
+    </ol>
+  </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Catagory Area Start ##### -->
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(/img/blog-img/11.jpg);">
+  <div class="blog-details-headline">
+    <h3>Tổng quan về SQL</h3>
+    <div class="meta d-flex align-items-center justify-content-center">
+      <a href="/about">Tran Duc Trung</a>
+      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+      <a href="#">17/07/2018</a>
+    </div>
+  </div>
+</div>
+<!-- ##### Catagory Area End ##### -->
+
+<!-- ##### Blog Details Content ##### -->
+<div class="blog-details-content section-padding-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <!-- Blog Details Text -->
+        <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">1) Có những kiểu quan hệ gì giữa 2 bảng trong SQL?</h4>
+            <p class="content-1"><strong>- Có 3 kiểu quan hệ giữa 2 bảng trong SQL: một - một (1-1), một - nhiều (1-n), nhiều - nhiều(n-n)</strong></p>
+            <ul class="content-2">
+              <li><strong>+ 1-1:</strong> Là kiểu quan hệ mà mỗi thực thể của tập cha chỉ liên kết với nhiều nhất là 1 thực thể của tập con, và ngược lại</li>
+              <span class="note"><u>VD:</u> Quan hệ giữa thực thể People và ID, mỗi người chỉ có duy nhất 1 số chứng minh thư và 1 chứng minh thư chỉ có thể đại diện cho 1 người</span>
+              <li><strong>+ 1-n:</strong> Là kiểu quan hệ mà mỗi thực thể của tập này có thể liên kết nhiều thực thể của tập còn lại</li>
+              <span class="note"><u>VD:</u> Quan hệ giữa thực thể User và Post là quan hệ 1-n vì mỗi user có thể tạo ra nhiều bài post, ngược lại 1 bài post chỉ có thể được viết bởi 1 user</span>
+              <li><strong>+ n-n:</strong> Là kiểu quan hệ mà 1 thực thể của tập này có thể liên kết với 0, 1 hoặc nhiều thực thể của tập kia và ngược lại</li>
+              <span class="note"><u>VD:</u> Quan hệ giữa thực thể Book và Author là quan hệ n-n vì 1 book có thể được viết bởi nhiều author và ngược lại 1 author có thể viết ra nhiều book</span>
+            </ul>
+          </ul>
+          <ul>
+            <h4 class="py-4">2) Có những kiểu join gì? Phân biệt các kiểu join?</h4>
+            <p class="content-1"><strong>- JOIN:</strong> Là tập hợp dữ liệu trong đó giá trị dùng để JOIN 2 bảng lại với nhau đều có ở 2 bảng. Các kiểu join trong SQL:</p>
+            <ul class="content-2">
+              <li>+ <i>INNER JOIN:</i> Trả về hàng khi có sự phù hợp trong tất cả các bảng được JOIN. Đây được coi là phép GIAO trong SQL</li>
+            </ul>
+            <p class="content-1">Ví dụ ta có 2 bảng Users và Posts như sau:</p>
+            <div class="offset-md-3">
+              <table>
+                <tr>
+                  <th colspan="3">Users</th>
+                </tr>
+                <tr>
+                  <th>id</th>
+                  <th>name</th>
+                  <th>email</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>A</td>
+                  <td>a@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>B</td>
+                  <td>b@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>C</td>
+                  <td>c@gmail.com</td>
+                </tr>
+              </table>
+              <table class="mt-15">
+                <tr>
+                  <th colspan="4">Posts</th>
+                </tr>
+                <tr>
+                  <th>id</th>
+                  <th>title</th>
+                  <th>content</th>
+                  <th>user_id</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Git</td>
+                  <td>Git example</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Ruby</td>
+                  <td>Ruby example</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Web</td>
+                  <td>Web example</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>SQL</td>
+                  <td>SQL example</td>
+                  <td>4</td>
+                </tr>
+              </table>
+            </div>
+            <ul>
+              <code class="cedo-1 mt-15">
+                SELECT a.name, a.email<br/>
+                FROM Users a<br/>
+                INNER JOIN Posts b ON a.id = b.user_id;<br/>
+              <br/>
+                Kết quả trả về:<br/>
+                A, a@gmail.com<br/>
+                C, c@gmail.com<br/>
+                D, d@gmail.com<br/>
+              </code>
+            </ul>
+            <ul class="content-2">
+              <li>+ <i>LEFT JOIN:</i> Trả về tất cả các bản ghi bảng bên trái, ngay cả khi không có sự phù hợp với bảng bên phải, những bản ghi phù hợp sẽ được kết hợp với bản ghi bảng bên trái, nếu không có dữ liệu sẽ trả về NULL.</li>
+            </ul>
+            <ul>
+              <code class="cedo-1 mt-15">
+                SELECT a.name, b.title<br/>
+                FROM Users a<br/>
+                LEFT JOIN Posts b ON a.id = b.user_id;<br/>
+              <br/>
+                Kết quả trả về:<br/>
+                A, Git<br/>
+                B, NULL<br/>
+                C, Web<br/>
+                D, SQL<br/>
+              </code>
+            </ul>
+            <ul class="content-2">
+              <li>+ <i>RIGHT JOIN:</i> Ngược lại với LEFT JOIN</li>
+            </ul>
+            <ul>
+              <code class="cedo-1 mt-15">
+                SELECT b.title, a.name<br/>
+                FROM Users a<br/>
+                RIGHT JOIN Posts b ON a.id = b.user_id;<br/>
+              <br/>
+                Kết quả trả về:<br/>
+                Git, A<br/>
+                Ruby, A<br/>
+                Web, C<br/>
+                SQL, D<br/>
+              </code>
+            </ul>
+            <ul class="content-2">
+              <li>+ <i>FULL JOIN:</i> Trả về tất cả các bản ghi của bảng bên trái và bảng bên phải, những dữ liệu bị thiếu sẽ trả về NULL</li>
+            </ul>
+            <ul>
+              <code class="cedo-1 mt-15">
+                SELECT b.title, a.name<br/>
+                FROM Users a<br/>
+                FULL JOIN Posts b ON a.id = b.user_id;<br/>
+              <br/>
+                Kết quả trả về:<br/>
+                A, Git<br/>
+                A, Ruby<br/>
+                B, NULL<br/>
+                C, Web<br/>
+                D, SQL<br/>
+              </code>
+            </ul>
+          </ul>
+          <ul>
+            <h4 class="py-4">3) Thế nào là Sub Query? Phân biệt Join và Sub Query?</h4>
+            <p class="content-1"><strong>- Sub Query:</strong> Hay còn gọi là truy vấn con, là 1 truy vấn nằm trong 1 câu truy vấn khác, các câu truy vấn con có thể nằm trong WHERE, FROM hoặc SELECT</p>
+            <p class="content-1">Ví dụ ta có 2 bảng Users và Posts như sau:</p>
+            <div class="offset-md-3">
+              <table>
+                <tr>
+                  <th colspan="4">Users</th>
+                </tr>
+                <tr>
+                  <th>id</th>
+                  <th>name</th>
+                  <th>email</th>
+                  <th>age</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>A</td>
+                  <td>a@gmail.com</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>B</td>
+                  <td>b@gmail.com</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>C</td>
+                  <td>c@gmail.com</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>D</td>
+                  <td>d@gmail.com</td>
+                  <td>15</td>
+                </tr>
+              </table>
+              <table class="mt-15">
+                <tr>
+                  <th colspan="4">Posts</th>
+                </tr>
+                <tr>
+                  <th>id</th>
+                  <th>title</th>
+                  <th>content</th>
+                  <th>user_id</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Git</td>
+                  <td>Git example</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Ruby</td>
+                  <td>Ruby example</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Web</td>
+                  <td>Web example</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>SQL</td>
+                  <td>SQL example</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Git</td>
+                  <td>Git advance</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </div>
+            <ul class="content-2">
+              <li>+ <strong>Subquery nằm trong WHERE:</strong></li>
+              <code class="cedo-1 mt-15">
+                SELECT a.name, a.email<br/> 
+                FROM Users a <br/>
+                WHERE a.id IN <br/> 
+                  (SELECT b.user_id <br/>
+                  FROM Posts b <br/>
+                  WHERE b.title = "Git");<br/>
+                <br/>
+                Kết quả trả về:<br/>
+                A, a@gmail.com <br/>
+                B, b@gmail.com <br/>
+              </code>
+            </ul>
+            <ul class="content-2">
+              <li>+ <strong>Subquery nằm trong FROM:</strong></li>
+              <code class="cedo-1 mt-15">
+                SELECT a.name, t1.count<br/>
+                FROM Users a,<br/>
+                  (SELECT b.user_id, SUM(title) AS count<br/>
+                  FROM Posts b<br/>
+                  GROUP BY b.user_id) AS t1<br/>
+                WHERE a.id = t1.user_id;<br/>
+              <br/>
+                Kết quả trả về:<br/>
+                A, 2<br/>
+                B, 1<br/>
+                C, 1<br/>
+                D, 1<br/>
+              </code>
+            </ul>
+            <ul class="content-2">
+              <li>+ <strong>Subquery nằm trong SELECT:</strong></li>
+              <code class="cedo-1 mt-15">
+                SELECT a.name, a.email,<br/>  
+                  (SELECT MAX(age)  <br/>
+                  FROM Users b <br/>
+                  WHERE a.id = b.id) AS t1 <br/>
+                FROM Users a;  <br/>
+              <br/>
+                Kết quả trả về:<br/>
+                B, b@gmail.com, 40<br/>
+              </code>
+            </ul>
+          </ul>
+          <ul>
+            <h4 class="py-4">4) Thế nào là đánh Index? Ưu - nhược điểm của việc đánh index? Ta thường đánh index trong những trường hợp nào?</h4>
+            <p class="content-1"><strong>- Index</strong> là 1 bảng tra cứu đặc biệt mà database có thể sử dụng để tăng nhanh thời gian và hiệu suất tìm kiếm. Index trong database cũng tương tự như là mục lục trong 1 cuốn sách</p>
+            <p class="content-1">- Trong Mysql kiểu index thường được sử dụng là B-Tree. Dữ liệu index trong B-Tree được tổ chức theo dạng cây, giá trị của các node được tổ chức tăng dần từ trái qua phải. Khi truy vấn dữ liệu thì việc tìm kiếm sẽ được bắt đầu từ gốc, rồi tìm kiếm tới các nhánh, đến khi tìm được tất cả dữ liệu thỏa mãn với điều kiện thì mới dừng lại. </p>
+            <ul class="content-2">
+              <li class="mb-15"><strong>+ Tạo index trong 1 bảng:</strong></li>
+              <code class="cedo-1">
+                CREATE UNIQUE INDEX index_name<br/>
+                ON table_name;<br/>
+              </code>
+              <li class="mb-15"><strong>+ Tạo index cho 1 cột trong bảng:</strong></li>
+              <code class="cedo-1">
+                CREATE UNIQUE INDEX index_name<br/>
+                ON table_name(column 1, column 2,...);<br/>
+              </code>
+            </ul>
+            <p class="content-1 mt-15">- Ưu điểm của việc đánh Index: Đẩy nhanh xử lý lọc và tìm kiểm record theo điều kiện WHERE cả với câu lệnh SELECT, DELETE, UPDATE</p>
+            <p class="content-1"><strong>- Nhược điểm của việc đánh Index:</strong></p>
+            <ul class="content-2">
+              <li>+ Việc tạo index sẽ làm mất thêm 1 công đoạn nữa, nếu CSDL lớn thì việc tạo index sẽ gây tốn thời gian</li>
+              <li>+ Do index là việc sắp xếp dữ liệu theo cấu trúc nên nếu có sự thay đổi (INSERT, DELETE, UPDATE) thì index cũng bị thay đổi theo -> tốc độ bị giảm đi</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- Những trường hợp thường đánh Index:</strong></p>
+            <ul class="content-2">
+              <li>+ Khi số lượng search record là ít trong khi dữ liệu trong Database lớn</li>
+              <li>+ Khi database sử dụng SELECT nhiều hơn là INSERT, DELETE, UPDATE</li>
+              <li>+ Khi so sánh giá trị của field với số chỉ định VD: WHERE name = "tdtrung"</li>
+              <li>+ Khi cố định giá trị đầu tiên của chuỗi theo LIKE</li>
+              <li>+ Có thể ORDER BY, GROUP BY dựa theo prefix của chuỗi</li>
+            </ul>
+          </ul>
+          <ul>
+            <h4 class="py-4">5) Thế nào là transaction? Ta thường sử dụng transaction trong những trường hợp nào?</h4>
+            <p class="content-1"><strong>- Transaction:</strong> Là 1 tiến trình xử lý mà ở đó đã xác định điểm đầu và điểm cuối, trong tiến trình này sẽ bao gồm các operation hoạt động tuần tự nối tiếp nhau, nếu trong quá trình xử lý có 1 operation nào đó xảy ra lỗi thì tất cả các operation trước đó dù đã xử lý thành công cũng sẽ bị Rollback quay về trạng thái ban đầu.</p>
+            <p class="content-1"><strong>- Các thuộc tính của Transaction:</strong></p>
+            <ul class="content-2">
+              <li><i>+ Atomicity (Tính nguyên tử)</i> Quy định rõ ràng rằng 1 là tất cả các hành động đều thực thi đều thành công, 2 là nếu có hành động bị lỗi thì đồng nghĩa với việc sẽ không có sự thay đổi nào về mặt dữ liệu cả</li>
+              <li><i>+ Consistency (Tính nhất quán)</i> Quy định rằng tại bất cứ 1 thời điểm nào, trước hoặc sau 1 transaction được thực hiện dù có lỗi hay không thì database vẫn phải được giữ ở trạng thái hợp lệ</li>
+              <li><i>+ Isolation (Tính độc lập)</i> Quy đinh rằng nếu có 2 transaction được thực hiện cùng lúc thì nguyên tắc thực thi là độc lập, tức là 2 transaction này không thể tác động lẫn nhau</li>
+              <li><i>+ Durability (Tính bền vững)</i> Quy định rằng sau khi thực hiện 1 transaction xong (thành công hoặc là rollback lại) thì sau đó dù có gặp bất cứ lỗi gì với database thì khi được khôi phục lại, dữ liệu được khôi phục sẽ giữ nguyên trạng thái trước khi gặp sự cố.</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- Ta thường sử dụng transaction trong những trường hợp nào?</strong></p>
+            <p class="content-1">Những trường hợp mà xử lý trên CSDL được thực hiện bằng nhiều thao tác liên tiếp nhau, tập hợp của những thao tác này được xem là 1 thao tác Atomic (nguyên tử) để đảm bảo tính nhất quán của dữ liệu. Có thể lấy ví dụ như:</p>
+            <ul class="content-2">
+              <li>+ Giao dịch trong ngân hàng</li>
+              <li>+ Tiến hành setup 1 phần mềm trên máy tính</li>
+              <li>+ Làm bài trắc nghiệm online.</li>
+            </ul>
+          </ul>
+          <!-- Tags -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-posts section-padding-100-0">
+    <div class="section-heading">
+      <h3>More posts</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="/img/blog-img/10.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="/posts/web-base" class="blog-headline">
+                <h4>Những kiến thức cần biết về Web-base</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="/about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="/posts/web-base">16/07/2018</a>
+              </div>
+              <h6>1) Thế nào là REST?</h6>
+              <p>- REST là viết tắt của REpresentational State Transfer...</p>
+              <div>
+                <a href="/posts/web-base"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="/img/blog-img/12.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="/posts/tim-hieu-ve-html-css" class="blog-headline">
+                <h4>Tìm hiểu về HTML5 và CSS 3</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="/about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="/posts/tim-hieu-ve-html-css">18/07/2018</a>
+              </div>
+              <h6>1) CSS3 là gì? CSS3 có những điểm gì mới?</h6>
+              <p>- CSS là viết tắt của Cascading Style Sheet là 1 ngôn ngữ để định...</p>
+              <div>
+                <a href="/posts/tim-hieu-ve-html-css"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	    
+
+	    
+	    <footer class="footer-area">
+    
+    <div class="top-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="footer-logo">
+                        <a href="/"><img src="img/core-img/logo2.png" alt=""></a>
+                    </div>
+                    
+                    <p><a href="#">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+        
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+            <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+        </div>
+        
+        <div class="follow-us">
+            <span>Follow me</span>
+            <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+	    
+
+	    
+	    
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+<script src="js/bootstrap/popper.min.js"></script>
+
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<script src="js/plugins/plugins.js"></script>
+
+<script src="js/active.js"></script>
+	</body>
+</html>

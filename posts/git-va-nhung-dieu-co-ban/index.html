@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    
+    <title>Tran Duc Trung Blog | Home</title>
+
+    
+    <link rel="icon" href="/img/core-img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="agency.min.css" rel="stylesheet">
+    <style type="text/css">
+      table, td, th {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      th, td {
+          text-align: center;
+      }
+      .cedo{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        margin-left: 10px; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: inline;
+      }
+
+      .cedo-1{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: block;
+      }
+
+      p.content-1{
+        font-family: 'Roboto', sans-serif;
+        color: #5a5a5a;
+      }
+
+      .content-2 li, .note {
+        margin-top: 10px;
+        text-indent: 15px; 
+        font-size: 16px; 
+        color: #5a5a5a;
+      }
+    </style>
+</head>
+	<body>
+	    
+	    
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+
+<header class="header-area">
+
+  
+  <div class="top-header-area d-flex justify-content-between align-items-center">
+    
+    <div class="contact-info">
+      <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+      <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+    </div>
+    
+    <div class="follow-us">
+      <span>Follow me</span>
+      <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  
+  <div class="clever-main-menu">
+    <div class="classy-nav-container breakpoint-off">
+      
+      <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+        
+        <a class="nav-brand" href="/"><img src="img/core-img/logo.png" alt=""></a>
+
+        
+        <div class="classy-menu">
+          
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          
+          <div class="classynav">
+            <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="about">ABOUT ME</a>
+              <li><a href="posts">POSTS</a></li>
+              <li><a href="contact">CONTACT ME</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+	    
+
+	    
+	    <!-- ##### Breadcumb Area Start ##### -->
+
+<div class="breadcumb-area">
+  <!-- Breadcumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="/posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Git và những điều cơ bản</li>
+    </ol>
+  </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Catagory Area Start ##### -->
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(/img/blog-img/8.jpg);">
+  <div class="blog-details-headline">
+    <h3>Git và những điều cơ bản</h3>
+    <div class="meta d-flex align-items-center justify-content-center">
+      <a href="#">Tran Duc Trung</a>
+      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+      <a href="#">14/07/2018</a>
+    </div>
+  </div>
+</div>
+<!-- ##### Catagory Area End ##### -->
+
+<!-- ##### Blog Details Content ##### -->
+<div class="blog-details-content section-padding-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <!-- Blog Details Text -->
+        <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">1. Thế nào là repository, branch?</h4>
+            <p class="content-1">- <strong>Repository:</strong> Là kho lưu trữ toàn bộ thông tin của 1 project. Có 2 loại repository:</p>
+            <ul class="content-2">
+              <li>+ <i>Repository remote:</i> Kho lưu trữ từ xa dùng để chia sẻ thông tin với người dùng khác</li>
+              <li>+ <i>Repository local:</i> Kho lưu trữ ở máy tính của người dùng</li>
+            </ul>
+            <p class="content-1">- <strong>Branch:</strong></p>
+            <ul class="content-2">
+              <li>+ Là không gian làm việc của người dùng (workspace)</li>
+              <li>+ Trong 1 project sẽ có nhiều nhánh khác nhau và mỗi nhánh hoàn toàn độc lập với nhau.</li>
+              <li>+ Trong quá trình làm việc có thể gộp các nhánh lại với nhau bằng lệnh rebase rồi tiếp tục làm việc bình thường.</li>
+            </ul>
+          </ul>
+          <ul>
+            <h4 class="py-4">2. Làm thế nào để xoá một branch ở phía local, làm thế nào để xoá một branch remote?</h4>
+            <p class="content-1">- <strong>Local:</strong></p>
+            <ul>
+              <code class="cedo">Git branch -D branch_name</code>  <span class="note"><i>(xóa không cần lí do)</i></span>
+              <p class="mt-15">hoặc</p>
+              <code class="cedo">Git branch -d branch_name</code>  <span class="note"><i>(nếu đã tạo pull request và chưa được merge thì sẽ không xóa được theo cách này)</i></span>
+            </ul>
+            <p class="content-1">- <strong>Remote:</strong></p>
+            <code class="cedo">Git push remote_name -d branch_name</code>
+          </ul>
+          <ul>
+            <h4 class="py-4">3. Làm thế nào để push một branch ở local lên remote dưới một cái tên khác (Ví dụ như ở local tên branch là task#1, và muốn push lên branch task#2 ở remote)</h4>
+            <code class="cedo">Git push remote_name task1:task2</code>
+          </ul>
+          <ul>
+            <h4 class="py-4">4. Thế nào là git rebase. Phân biệt rebase với merge?</h4>
+            <p class="content-1">- <strong>Rebase:</strong> Tích hợp những thay đổi ở nhánh khác vào nhánh hiện tại</p>
+            <p class="mt-15">Phân biệt:</p>
+            <ul class="content-2">
+              <li>+ <i>Rebase:</i> Các commit của nhánh đang rebase sẽ được sao chép lại và đưa tất cả lên phía trước commit mới nhất của nhánh rebase (các commit ở nhánh đang rebase sẽ là mới nhất)</li>
+              <li>+ <i>Merge:</i> Lấy tất cả những thay đổi của 2 commit mới nhất ở 2 nhánh rồi tạo thành 1 commit mới (lịch sử commit được giữ nguyên)</li>
+            </ul>
+          </ul>
+          <ul>
+            <h4 class="py-4">5. Thế nào là git fetch. Phân biệt fetch với pull?</h4>
+            <p class="content-1">- <strong>Fetch:</strong> Sau khi kéo 1 nhánh trên remote về, git sẽ không merge luôn mà sẽ lưu những thay đổi sang 1 nhánh khác</p>
+            <p class="content-1">- <strong>Pull:</strong> Sau khi kéo 1 nhánh trên remote, git sẽ tự động merge những thay đổi vào nhánh ở local</p>
+          </ul>
+          <ul>
+            <h4 class="py-4">6. Thế nào là git stash?</h4>
+            <p class="content-1">- Dùng để lưu những thay đổi khi muốn chuyển sang 1 branch khác mà không muốn commit</p>
+          </ul>
+          <ul>
+            <h4 class="py-4">7. Làm thế nào xoá bỏ trạng thái của một vài commit gần đây?</h4>
+            <code class="cedo">Git reset --hard HEAD~n</code>  <span class="note"><i>(n là các số tự nhiên như 1,2,3,4...)</i></span>
+          </ul>
+          <ul>
+            <h4 class="py-4">8. Làm thế nào để gộp một vài commit thành 1 commit duy nhất?</h4>
+            <code class="cedo">Git rebase -i HEAD~n</code>  <span class="note"><i>(n là các số tự nhiên như 1,2,3,4...)</i></span>
+          </ul>
+          <ul>
+            <h4 class="py-4">9. Phân biệt git reset, git reset --hard, git reset --soft?</h4>
+            <div>
+              <code class="cedo">Git reset</code>    
+              <span class="note">hoặc</span>
+              <code class="cedo">Git reset HEAD~n:</code>
+              <span class="note">Di chuyển con trỏ HEAD về commit reset, giữ nguyên thay đổi các file và loại bỏ những thay đổi ở stage</span>
+            </div>
+            <div class="mt-15">
+              <code class="cedo">Git reset --hard HEAD~n:</code>    
+              <span class="note">Di chuyển con trỏ HEAD về commit reset, giữ nguyên thay đổi các file và loại bỏ những thay đổi ở stage</span>
+            </div>
+            <div class="mt-15">
+              <code class="cedo">Git reset --soft HEAD~n:</code>    
+              <span class="note">Di chuyển con trỏ HEAD về commit reset và giữ nguyên tất cả những thay đổi của các file kể cả ở stage</span>
+            </div>
+          </ul>
+          <ul>
+            <h4 class="py-4">10. Thế nào là cherry-pick, khi nào thì dùng cherry-pick?</h4>
+            <p class="content-1"><strong>Cherry-pick:</strong> Dùng để checkout commit ở nhánh khác vào nhánh hiện tại</p>
+            <p class="mt-15">Ví dụ ở nhánh <i>develop</i> đang có commit mới nhất là "update user" và người dùng hiện tại đang làm việc trên nhánh <i>delete_user</i></p>
+            <p class="mt-15">Khi muốn lấy hết tất cả những thay đổi trong commit "update user" ở nhánh <i>develop</i> sang <i>delete_user</i> thì lúc này người dùng có thể sử dụng:</p><code class="cedo">Git cherry-pick develop</code> 
+          </ul>
+          <ul>
+            <h4 class="py-4">11. Git flow</h4>
+            <ul style="text-indent: 30px;" class="content-2">
+              <li>1. Fork</li>
+              <li>2. Clone</li>
+              <li>3. Git remote add</li>
+              <li>4. Git checkout -b branch_name</li>
+              <li>5. Git add/commit</li>
+              <li>6. Git rebase *</li>
+              <li style="text-indent: 30px;">6.1. Git checkout master</li>
+              <li style="text-indent: 30px;">6.2. Git pull</li>
+              <li style="text-indent: 30px;">6.3. Git checkout branch_name</li>
+              <li style="text-indent: 30px;">6.4. Git rebase master</li>
+              <li>7. Git push origin branch_name</li>
+              <li>8. Create pull request</li>
+            </ul>
+          </ul>
+          <!-- Tags -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-posts section-padding-100-0">
+    <div class="section-heading">
+      <h3>More posts</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="/img/blog-img/10.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="#" class="blog-headline">
+                <h4>Tìm hiểu về ngôn ngữ lập trình Ruby</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="/about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="#">15/07/2018</a>
+              </div>
+              <h6>1. Các đặc điểm cơ bản của lập trình hướng đối tượng. Chúng được thể hiện như thế nào trong Ruby...</h6>
+              <div>
+                <button class="btn btn-success mt-3">Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="/img/blog-img/9.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="#" class="blog-headline">
+                <h4>Tìm hiểu về ngôn ngữ lập trình Ruby</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="/about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="#">15/07/2018</a>
+              </div>
+              <h6>1. Các đặc điểm cơ bản của lập trình hướng đối tượng. Chúng được thể hiện như thế nào trong Ruby...</h6>
+              <div>
+                <button class="btn btn-success mt-3">Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	    
+
+	    
+	    <footer class="footer-area">
+    
+    <div class="top-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="footer-logo">
+                        <a href="/"><img src="img/core-img/logo2.png" alt=""></a>
+                    </div>
+                    
+                    <p><a href="#">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+        
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+            <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+        </div>
+        
+        <div class="follow-us">
+            <span>Follow me</span>
+            <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+	    
+
+	    
+	    
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+<script src="js/bootstrap/popper.min.js"></script>
+
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<script src="js/plugins/plugins.js"></script>
+
+<script src="js/active.js"></script>
+	</body>
+</html>

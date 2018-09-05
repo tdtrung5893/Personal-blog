@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    
+    <title>Tran Duc Trung Blog | Home</title>
+
+    
+    <link rel="icon" href="/img/core-img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="agency.min.css" rel="stylesheet">
+    <style type="text/css">
+      table, td, th {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      th, td {
+          text-align: center;
+      }
+      .cedo{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        margin-left: 10px; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: inline;
+      }
+
+      .cedo-1{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: block;
+      }
+
+      p.content-1{
+        font-family: 'Roboto', sans-serif;
+        color: #5a5a5a;
+      }
+
+      .content-2 li, .note {
+        margin-top: 10px;
+        text-indent: 15px; 
+        font-size: 16px; 
+        color: #5a5a5a;
+      }
+    </style>
+</head>
+	<body>
+	    
+	    
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+
+<header class="header-area">
+
+  
+  <div class="top-header-area d-flex justify-content-between align-items-center">
+    
+    <div class="contact-info">
+      <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+      <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+    </div>
+    
+    <div class="follow-us">
+      <span>Follow me</span>
+      <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  
+  <div class="clever-main-menu">
+    <div class="classy-nav-container breakpoint-off">
+      
+      <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+        
+        <a class="nav-brand" href="/"><img src="img/core-img/logo.png" alt=""></a>
+
+        
+        <div class="classy-menu">
+          
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          
+          <div class="classynav">
+            <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="about">ABOUT ME</a>
+              <li><a href="posts">POSTS</a></li>
+              <li><a href="contact">CONTACT ME</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+	    
+
+	    
+	    <!-- ##### Breadcumb Area Start ##### -->
+
+<div class="breadcumb-area">
+  <!-- Breadcumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="/posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Scope và Closure trong JavaScript</li>
+    </ol>
+  </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Catagory Area Start ##### -->
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(/img/blog-img/13.jpg);">
+  <div class="blog-details-headline">
+    <h3>Scope và Closure trong JavaScript</h3>
+    <div class="meta d-flex align-items-center justify-content-center">
+      <a href="/about">Tran Duc Trung</a>
+      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+      <a href="#">18/07/2018</a>
+    </div>
+  </div>
+</div>
+<!-- ##### Catagory Area End ##### -->
+
+<!-- ##### Blog Details Content ##### -->
+<div class="blog-details-content section-padding-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <!-- Blog Details Text -->
+        <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">Thế nào là scopes ? Trong Javascript có những kiểu scopes gì?</h4>
+            <p class="content-1"><strong>- Scope:</strong> Là phạm vị truy cập, có thể sử dụng được các variable hoặc function</p>
+            <p class="content-1"><strong>- Các loại scope trong JavaScript:</strong></p>
+            <ul class="content-2">
+              <li>+ <strong><i>Global scope (scope toàn cục):</i></strong> Có nghĩa là có thể truy cập từ bất cứ đâu trong chương trình</li>
+              <code class="cedo-1 mt-15">
+                var name = "Trung";<br/>
+                function myfunc() {<br/>
+                  alert(name);<br/>
+                }<br/>
+                myfunc();    // Trung<br/>
+                alert(name);    // Trung<br/>
+              </code>
+              <span class="note">Biến name có phạm vị truy cập là global scope nên nó có thể truy cập được ở trong lẫn bên ngoài function</span>
+              <li>+ <strong><i>Local Scope (scope cục bộ):</i></strong> Chỉ có thể truy cập được từ 1 phạm vi nhất định</li>
+              <code class="cedo-1 mt-15">
+                function myfunc() {<br/>
+                  var name = "Trung";<br/>
+                  alert(name);<br/>
+                  }<br/>
+                myfunc();    // Trung<br/>
+                alert(name);    // Undefined<br/>
+              </code>
+              <span class="note">Biến name có phạm vị truy cập là local scope nên nó không thể truy cập được từ bên ngoài function, do đó dẫn đến Undefined</span>
+              <li>+ <strong><i>Function scope:</i></strong> Là scope được tạo ra chỉ cho function đó sử dụng. Nó chính là mọi thứ nằm trong dấu {} của hàm.</li>
+              <code class="cedo-1 mt-15">
+                var myfunc = function() {<br/>
+                // code here<br/>
+                }<br/>
+              </code>
+            </ul>
+            <h4 class="py-4">Thế nào là closure?</h4>
+            <p class="content-1"><strong>- Closure:</strong> Là một hàm được tạo ra từ bên trong một hàm khác (hàm cha), nó có thể sử dụng các biến toàn cục, biến cục bộ của hàm cha và biến cục bộ của chính nó. Việc viết hàm theo kiểu closure trong một số trường hợp sẽ giúp code nhìn sáng và dễ quản lý hơn, linh hoạt hơn trong việc xử lý các chức năng.</p>
+            <ul>
+              <code class="cedo-1">
+                function showmessage(message) {    // Tạo hàm closure<br/>
+                  return function() {<br/>
+                    alert(message + ' ' + 'Trung');<br/>
+                  };<br/>
+                }<br/>
+                var funcmessage = showmessage('Hello');    // Khởi tạo hàm closure<br/>
+                funcmessage();    // Hello Trung<br/>
+              </code>
+            </ul>
+            <p class="content-1"><strong>- Closure có thể thay đổi giá trị biến toàn cục lẫn cục bộ:</strong> Các closure có thể sử dụng biến toàn cục, biến cục bộ của hàm cha và biến cục bộ của chính nó. Không chỉ sử dụng được mà còn có khả năng thay đổi giá trị của các biến đó Kỹ thuật composition sẽ làm cho code dài hơn nhưng lại clear hơn và dễ dàng thay đổi, bảo trì sau này. Ngoài ra nó còn làm linh hoạt hơn trong cách sử dụng đối với các class mới tạo.</p>
+            <code class="cedo-1">
+              function person() {<br/>
+                var name = ' ';<br/>
+                return {<br/>
+                  set: function(inname) {<br/>
+                    name = inname;<br/>
+                  },<br/>
+                  getname: function() { <br/>
+                    return name;<br/>
+                  }<br/>
+                };<br/>
+              }<br/>
+              var object = person();<br/>
+              object.set('Trung');<br/>
+              alert(object.getname());    // Trung<br/>
+            </code>
+            <p class="content-1"><strong>- Độ ưu tiên các biến:</strong> Như ta biết closure function có thể sử dụng biến tại ba vị trí đó là biến toàn cục, biến cục bộ hàm cha và biến cục bộ của chính nó. Bây giờ có một trường hợp là tên các biến ở ba vị trí đó bị trùng nhau. Và trong trường hợp này thì nó sẽ ưu tiên từ trong ra ngoài.</p>
+            <code class="cedo-1">
+              var message = 'Biến toàn cục';<br/>
+              function showMessage() {<br/>
+                var message = 'Biến cục bộ của hàm cha';<br/>
+                return function(){<br/>
+                  var message = 'Biến cục bộ của hàm con';<br/>
+                  alert(message);<br/>
+                };<br/>
+              }<br/>
+              var messageFunc = showMessage();<br/>
+              messageFunc();    // Biến toàn cục của hàm con<br/>
+            </code>
+          </ul>
+          <!-- Tags -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-posts section-padding-100-0">
+    <div class="section-heading">
+      <h3>More posts</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="/img/blog-img/11.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="/posts/tong-quan-ve-sql" class="blog-headline">
+                <h4>Tổng quan về SQL</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="/about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="/posts/tong-quan-ve-sql">17/07/2018</a>
+              </div>
+              <h6>1) Có những kiểu quan hệ gì giữa 2 bảng trong SQL?</h6>
+              <p>- Có 3 kiểu quan hệ giữa 2 bảng trong SQL: một - một (1-1), một...</p>
+              <div>
+                <a href="/posts/tong-quan-ve-sql"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="/img/blog-img/13.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="/posts/function-declaration-va-function-expression" class="blog-headline">
+                <h4>Function Declaration và Function Expression</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="/about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="/posts/function-declaration-va-function-expression">19/07/2018</a>
+              </div>
+              <p>- <strong>Function Expression (FE):</strong> Trong JavaScript thì FE không yêu cầu đặt tên cho function.</p>
+              <div>
+                <a href="/posts/function-declaration-va-function-expression"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	    
+
+	    
+	    <footer class="footer-area">
+    
+    <div class="top-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="footer-logo">
+                        <a href="/"><img src="img/core-img/logo2.png" alt=""></a>
+                    </div>
+                    
+                    <p><a href="#">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+        
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+            <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+        </div>
+        
+        <div class="follow-us">
+            <span>Follow me</span>
+            <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+	    
+
+	    
+	    
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+<script src="js/bootstrap/popper.min.js"></script>
+
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<script src="js/plugins/plugins.js"></script>
+
+<script src="js/active.js"></script>
+	</body>
+</html>

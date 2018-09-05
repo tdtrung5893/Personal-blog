@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Profile</title>
+    <link>https://tdtrung5893.github.io/Personal-blog/</link>
+    <description>Recent content on My Profile</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://tdtrung5893.github.io/Personal-blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/about/</guid>
+      <description>{{ partial &#34;head.html&#34; . }}{{ partial &#34;header.html&#34; . }}AboutTrước khi muốn bỏ cuộc, hãy nhớ lý do vì sao bạn bắt đầu.05/10/1993BirthdayĐịa chỉ: Xóm 10, thôn Kim Hoàng, xã Vân Canh, huyện Hoài Đức, thành phố Hà Nội
+2008 - 2011Hoai Duc A High SchoolTrung học phổ thông Hoài Đức A</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/contact/</guid>
+      <description>{{ partial &#34;head.html&#34; . }}{{ partial &#34;header.html&#34; . }}Contact Info Business Hours8:00 AM - 17:00 PM Number+84 164 806 2543 Emailtdtrung5893@gmail.com AddressKim Hoang, Van Canh, Hoai Duc, Ha NoiGet In TouchSend Email{{ partial &#34;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/</guid>
+      <description>{{ partial &#34;head.html&#34; . }}{{ partial &#34;header.html&#34; . }}My Blog - Recent postsGit và những điều cơ bảnTran Duc Trung14/07/20181. Thế nào là Repository, branch?- Repository: Là kho lưu trữ toàn bộ thông tin của 1 project...
+Read moreTìm hiểu về ngôn ngữ lập trình RubyTran Duc Trung15/07/20181.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/arrow-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/arrow-function/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/function-declaration-va-function-expression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/function-declaration-va-function-expression/</guid>
+      <description>Home Posts Function Declaration và Function Expression    Function Declaration và Function Expression Tran Duc Trung  19/07/2018     Phân biệt function expression với function statement? - Function Expression (FE): Trong JavaScript thì FE không yêu cầu đặt tên cho function. Tuy nhiên để tiện cho việc test, đọc code... thì chúng ta vẫn cần đặt tên cho chúng. Với FE, tên của function (nếu có) sẽ chỉ hiện hưũ ở scope của nó, và nó sẽ không tồn tại ngoài scope cha.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/git-va-nhung-dieu-co-ban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/git-va-nhung-dieu-co-ban/</guid>
+      <description>Home Posts Git và những điều cơ bản    Git và những điều cơ bản Tran Duc Trung  14/07/2018     1. Thế nào là repository, branch? - Repository: Là kho lưu trữ toàn bộ thông tin của 1 project. Có 2 loại repository:
++ Repository remote: Kho lưu trữ từ xa dùng để chia sẻ thông tin với người dùng khác + Repository local: Kho lưu trữ ở máy tính của người dùng  - Branch:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/gulp-vs-webpack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/gulp-vs-webpack/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/nguyen-ly-solid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/nguyen-ly-solid/</guid>
+      <description>Home Posts Nguyên lý SOLID    Nguyên lý SOLID Tran Duc Trung  15/07/2018     1) Thế nào là Design Principles? - Design Principles: Là tổng hợp những nguyên tắc trong thiêt kế nhằm mục đích giúp các lập trình viên tránh khỏi 1 thiết kế tồi, có 3 đặc điểm trong 1 thiết kế tồi, đó là:
++ Cứng nhắc: Khó có thể thay đổi vì mỗi lần thay đổi sẽ ảnh hưởng tới các thành phần khác của hệ thống.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/nodejs-la-gi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/nodejs-la-gi/</guid>
+      <description>Home Posts Nodejs là gì?    Nodejs là gì? Tran Duc Trung  22/07/2018     - Nodejs + Node.js là 1 mã nguồn mở, 1 môi trường cho các máy chủ và ứng dụng mạng. Nodejs sử dụng V8 JavaScript engine để thực thi mã, các ứng dụng nodejs đều được viết bằng javascript + Nodejs chứa 1 thư viện built-in cho phép các ứng dụng hoạt động như 1 webserver + Nodejs cung cấp kiến trúc hướng sự kiện (event-driven) và non-blocking I/O API, giúp tối ưu hóa thông lượng của ứng dụng và có tính mở rộng cao + Mọi hàm trong Node.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/scope-va-closure-trong-javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/scope-va-closure-trong-javascript/</guid>
+      <description>Home Posts Scope và Closure trong JavaScript    Scope và Closure trong JavaScript Tran Duc Trung  18/07/2018     Thế nào là scopes ? Trong Javascript có những kiểu scopes gì? - Scope: Là phạm vị truy cập, có thể sử dụng được các variable hoặc function
+- Các loại scope trong JavaScript:
++ Global scope (scope toàn cục): Có nghĩa là có thể truy cập từ bất cứ đâu trong chương trình var name = &#34;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/su-dung-eslint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/su-dung-eslint/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-async-await/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-async-await/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-prototype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-prototype/</guid>
+      <description>Home Posts Thế nào là Prototype    Thế nào là Prototype Tran Duc Trung  21/07/2018     Thế nào là prototype? - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function này sẽ có 1 thuộc tính đó là prototype, nó đơn giản là trỏ đến 1 object khác
+- Object.prototype là 1 object và nó chứa khá nhiều các function thuộc tính mà chúng ta vẫn dùng như toString(), valueOf(), .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-axios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-axios/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-html-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-html-css/</guid>
+      <description>Home Posts Tìm hiểu về HTML5 và CSS 3    Tìm hiểu về HTML5 và CSS 3 Tran Duc Trung  18/07/2018     1) CSS3 là gì? CSS3 có những điểm gì mới? - CSS là viết tắt của Cascading Style Sheet là 1 ngôn ngữ để định dạng lại các phần tử được tạo ra bởi ngôn ngữ HTML
+- CSS3 là 1 phiên bản nâng cấp của CSS, là thành phần làm nên trang web 1 cách toàn diện nhất mà không cần phải bổ sung tới các thành phần bổ sung như: JavaScript, Jquery, Flash.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-lodash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-lodash/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-promise-javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-promise-javascript/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-ruby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-ruby/</guid>
+      <description>Home Posts Tìm hiểu về Ruby    Tìm hiểu về Ruby Tran Duc Trung  15/07/2018     1) Các đặc điểm cơ bản của lập trình hướng đối tượng. Chúng được thể hiện như thế nào trong Ruby Lập trình hướng đối tượng có 4 đặc điểm cơ bản:
+- Tính trừu tượng (Abstraction): Là trừu tượng hóa và định nghĩa 1 cách khái quát các tính chất, thuộc tính của 1 đối tượng.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-this-trong-javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-this-trong-javascript/</guid>
+      <description>Home Posts Tìm hiểu về this trong JavaScript    Tìm hiểu về this trong JavaScript Tran Duc Trung  20/07/2018     Phân biệt function expression với function statement? - Trong JavaScript con trỏ this dùng để tham chiếu đến đối tượng đang chứa mã lệnh thực thi.
+function person(age, name) { this.myage = age; this.myname = name; } var people = new person(&#39;25&#39;, &#39;Trung&#39;) alert(people.myage); // 25 alert(people.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tong-quan-ve-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tong-quan-ve-sql/</guid>
+      <description>Home Posts Tổng quan về SQL    Tổng quan về SQL Tran Duc Trung  17/07/2018     1) Có những kiểu quan hệ gì giữa 2 bảng trong SQL? - Có 3 kiểu quan hệ giữa 2 bảng trong SQL: một - một (1-1), một - nhiều (1-n), nhiều - nhiều(n-n)
++ 1-1: Là kiểu quan hệ mà mỗi thực thể của tập cha chỉ liên kết với nhiều nhất là 1 thực thể của tập con, và ngược lại VD: Quan hệ giữa thực thể People và ID, mỗi người chỉ có duy nhất 1 số chứng minh thư và 1 chứng minh thư chỉ có thể đại diện cho 1 người + 1-n: Là kiểu quan hệ mà mỗi thực thể của tập này có thể liên kết nhiều thực thể của tập còn lại VD: Quan hệ giữa thực thể User và Post là quan hệ 1-n vì mỗi user có thể tạo ra nhiều bài post, ngược lại 1 bài post chỉ có thể được viết bởi 1 user + n-n: Là kiểu quan hệ mà 1 thực thể của tập này có thể liên kết với 0, 1 hoặc nhiều thực thể của tập kia và ngược lại VD: Quan hệ giữa thực thể Book và Author là quan hệ n-n vì 1 book có thể được viết bởi nhiều author và ngược lại 1 author có thể viết ra nhiều book    2) Có những kiểu join gì?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/typescript-la-gi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/typescript-la-gi/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
+ Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/web-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/web-base/</guid>
+      <description>Home Posts Những kiến thức cần biết về Web-base    Những kiến thức cần biết về Web-base Tran Duc Trung  16/07/2018     1. Thế nào là REST? - REST là viết tắt của REpresentational State Transfer, là 1 kiểu kiến trúc lập trình, định nghĩa các quy tắc trong việc thiết kế Web Service chú trọng đến các tài nguyên.
+- Các tài nguyên ở đây bao gồm các tệp văn bản, hình ảnh, video, dữ liệu động.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/yarn-vs-npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/yarn-vs-npm/</guid>
+      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018     Npm là gì? - NPM viết tắt của Node Package Manager là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs
+Để chạy được phần mềm NPM hệ thống của chúng ta cần phải cài đặt NodeJS vì phần mềm NPM được tích hợp sẵn trong bộ cài NodeJS</description>
+    </item>
+    
+  </channel>
+</rss>

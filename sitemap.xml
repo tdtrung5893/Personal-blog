@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/arrow-function/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/function-declaration-va-function-expression/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/git-va-nhung-dieu-co-ban/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/gulp-vs-webpack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/nguyen-ly-solid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/nodejs-la-gi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/scope-va-closure-trong-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/su-dung-eslint/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-async-await/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-prototype/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-axios/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-html-css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-lodash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-promise-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-ruby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-this-trong-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tong-quan-ve-sql/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/typescript-la-gi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/web-base/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/yarn-vs-npm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
