@@ -15,10 +15,6 @@
   </url>
   
   <url>
-    <loc>https://tdtrung5893.github.io/Personal-blog/posts/arrow-function/</loc>
-  </url>
-  
-  <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</loc>
   </url>
   
@@ -43,15 +39,15 @@
   </url>
   
   <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/promise-vs-async-await/</loc>
+  </url>
+  
+  <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/scope-va-closure-trong-javascript/</loc>
   </url>
   
   <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/su-dung-eslint/</loc>
-  </url>
-  
-  <url>
-    <loc>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-async-await/</loc>
   </url>
   
   <url>
@@ -71,7 +67,7 @@
   </url>
   
   <url>
-    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-promise-javascript/</loc>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-reactjs/</loc>
   </url>
   
   <url>

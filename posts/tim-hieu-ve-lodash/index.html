@@ -11,11 +11,11 @@
     <title>Tran Duc Trung Blog | Home</title>
 
     
-    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="icon" href="../../img/core-img/favicon.ico">
 
     
-    <link rel="stylesheet" href="style.css">
-    <link href="agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link href="../../agency.min.css" rel="stylesheet">
     <style type="text/css">
       table, td, th {
         border: 1px solid black;
@@ -95,7 +95,7 @@
       <nav class="classy-navbar justify-content-between" id="cleverNav">
 
         
-        <a class="nav-brand" href="/"><img src="img/core-img/logo.png" alt=""></a>
+        <a class="nav-brand" href="../../"><img src="../../img/core-img/logo.png" alt=""></a>
 
         
         <div class="classy-menu">
@@ -106,10 +106,10 @@
           
           <div class="classynav">
             <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="about">ABOUT ME</a>
-              <li><a href="posts">POSTS</a></li>
-              <li><a href="contact">CONTACT ME</a></li>
+              <li><a href="../../">HOME</a></li>
+              <li><a href="../../about">ABOUT ME</a>
+              <li><a href="../../posts">POSTS</a></li>
+              <li><a href="../../contact">CONTACT ME</a></li>
             </ul>
           </div>
           
@@ -127,22 +127,22 @@
   <!-- Breadcumb -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item"><a href="/posts">Posts</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Yarn vs Npm</li>
+      <li class="breadcrumb-item"><a href="../../">Home</a></li>
+      <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tìm hiểu về Lodash</li>
     </ol>
   </nav>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### Catagory Area Start ##### -->
-<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(/img/blog-img/13.jpg);">
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/13.jpg);">
   <div class="blog-details-headline">
-    <h3>Yarn vs Npm</h3>
+    <h3>Tìm hiểu về Lodash</h3>
     <div class="meta d-flex align-items-center justify-content-center">
-      <a href="/about">Tran Duc Trung</a>
+      <a href="../../about">Tran Duc Trung</a>
       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-      <a href="#">23/07/2018</a>
+      <a href="#">31/07/2018</a>
     </div>
   </div>
 </div>
@@ -155,6 +155,83 @@
       <div class="col-12 col-lg-8">
         <!-- Blog Details Text -->
         <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">Lodash là gì?</h4>
+            <p class="content-1"><strong>- Lodash</strong> là phiên bản mở rộng hơn của underscore, với nhiều chức năng hơn và có hiệu năng cao hơn. Lodash có nhiều chức năng và có thể chia ra thành: chức năng hỗ trợ xử lý Array, chức năng xử lý Object, chức năng xử lý Array, nhóm xử lý Date, Function, Lang, Math, Number...</p>
+            <p class="content-1"><strong>- Cài đặt Lodash:</strong></p>
+            <code class="cedo-1 mt-15">
+              npm install Lodash --save-dev
+            </code>
+            <p class="content-1">- Để sử dụng ta tiến hành khai báo thư viện Lodash:</p>
+            <code class="cedo-1 mt-15">
+              var _ = require('lodash');
+            </code>
+            <p class="content-1"><strong>- Chức năng xử lý Object, String, Number...</strong></p>
+            <code class="cedo-1 mt-15">
+              _.isUndefined(null);    // => false<br/> 
+              _.isNull(null);    // => true<br/>
+              _.isFunction(_);    // => true<br/> 
+              _.isFunction(/abc/);    // => false<br/> 
+              _.isNumber(1);    // => true<br/> 
+              _.isNumber('1');    // => false<br/>  
+              _.isObject({});    // => true<br/>
+              _.isObject([1, 2, 3]);    // => true<br/> 
+              _.isObject(null);    // => false<br/>
+            </code>
+            <ul class="content-2">
+              <li>+ <i>_.capitalize</i>: Viết hoa kí tự đầu của string</li>
+              <li>+ <i>_.pad, _.padStart, _.padEnd</i>: Căn giữa, trái, phải string bằng cách thêm khoảng trắng vào string</li>
+              <li>+ <i>_.startCase</i>: Viết hoa các chữ cái đầu mỗi từ trong string</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- Chức năng xử lý Array</strong></p>
+            <code class="cedo-1 mt-15">
+              var array = [<br/>
+                {'username': 'Trung', 'age': 25, 'admin': true},<br/>
+                {'username': 'Thang', 'age': 28, 'admin': false},<br/>
+              ]<br/>
+            </code>
+            <p class="content-1">Có 2 cách để gọi hàm array trên</p>
+            <code class="cedo-1 mt-15">
+              // Cách 1<br/>
+              console.log(_.filter(array, 'admin', false))<br/>
+               // [{ 'username': 'Trung', 'age': 25, 'admin': true }];<br/>
+              <br/>
+              // Cách 2<br/>
+              console.log(_(array).filter('admin').value())<br/>
+               // [{ 'username': 'Trung', 'age': 25, 'admin': true }];<br/>
+            </code>
+            <ul class="content-2">
+              <li>+ <i>_.difference:</i> Lấy những phần tử khác nhau giữa 2 array  </li>
+              <li>+ <i>_.intersection:</i> Lấy những phần tử giống nhau giữa 2 hoặc nhiều array</li>
+              <li>+ <i>_.findIndex:</i> Tìm index của phần tử đầu tiên thỏa điều kiện</li>
+              <li>+ <i>_.find:</i> Tìm 1 phần tử trong array</li>
+              <li>+ <i>_.first, _.last:</i> Lấy phần tử đầu tiên và cuối cùng của array</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- Chức năng xử lý Function</strong></p>
+            <ul class="content-2">
+              <li>+ <i>_.functions:</i> Trả về tên toàn bộ những function của 1 object</li>
+              <code class="cedo-1 mt-15">
+                console.log(_.functions(_));<br/>
+                // ['after', 'ary', 'assign', …]
+              </code>
+              <li>+ <i>_.has:</i> Kiểm tra xem 1 object có property, hoặc function với tên là tham số được truyền vào hay không?</li>
+              <code class="cedo-1 mt-15">
+                var object = { 'a': 1, 'b': 2, 'c': 3 };<br/>
+                console.log(_.has(object, 'b'));    // true
+              </code>
+              <li>+ <i>_.keys:</i> Trả về tên toàn bộ những thuộc tính của 1 object</li>
+              <code class="cedo-1 mt-15">
+                function func(){<br/>
+                  this.a = 1;<br/>
+                  this.b = 2;<br/>
+                }<br/>
+                console.log(_.keys(new func));    // ['a', 'b']<br/>
+              </code>
+              <li>+ <i>_.pick:</i> Chỉ lấy 1 thuộc tính của object</li>
+              <li>+ <i>_.omit:</i> Bỏ 1 thuộc tính của object, lấy toàn bộ những thuộc tính còn lại</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>Tài liệu tham khảo:</strong> <a href="https://lodash.com/">https://lodash.com/</a></p>
+          </ul>
           <!-- Tags -->
         </div>
       </div>
@@ -169,20 +246,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="/img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/13.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="/posts/the-nao-la-prototype" class="blog-headline">
-                <h4>Thế nào là Prototype</h4>
+              <a href="../../posts/typescript-la-gi" class="blog-headline">
+                <h4>Typescript là gì?</h4>
               </a>
               <div class="meta d-flex align-items-center">
-                <a href="/about">Tran Duc Trung</a>
+                <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="/posts/the-nao-la-prototype">21/07/2018</a>
+                <a href="../../posts/typescript-la-gi">30/07/2018</a>
               </div>
-              <p>- Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...</p>
+              <p>- <strong>TypeScript</strong> là một dự án mã nguồn mở được phát triển bởi Microsoft, nó có thể...</p>
               <div>
-                <a href="/posts/the-nao-la-prototype"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/typescript-la-gi"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>
@@ -190,20 +267,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="/img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/13.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="/posts/yarn-vs-npm" class="blog-headline">
-                <h4>Yarn vs npm?</h4>
+              <a href="../../posts/tim-hieu-ve-axios" class="blog-headline">
+                <h4>Tìm hiểu về Axios</h4>
               </a>
               <div class="meta d-flex align-items-center">
-                <a href="/about">Tran Duc Trung</a>
+                <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="/posts/yarn-vs-npm">23/07/2018</a>
+                <a href="../../posts/tim-hieu-ve-axios">01/08/2018</a>
               </div>
-              <p>Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs...</p>
+              <p>- Axios là 1 HTTP Client được viết dựa trên Promises được dùng để hỗ trợ cho việc...</p>
               <div>
-                <a href="/posts/yarn-vs-npm"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/tim-hieu-ve-axios"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>
@@ -224,7 +301,7 @@
                 <div class="col-12">
                     
                     <div class="footer-logo">
-                        <a href="/"><img src="img/core-img/logo2.png" alt=""></a>
+                        <a href="../../"><img src="../../img/core-img/logo2.png" alt=""></a>
                     </div>
                     
                     <p><a href="#">
@@ -255,14 +332,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	    
 	    
-<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<script src="../../js/jquery/jquery-2.2.4.min.js"></script>
 
-<script src="js/bootstrap/popper.min.js"></script>
+<script src="../../js/bootstrap/popper.min.js"></script>
 
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="../../js/bootstrap/bootstrap.min.js"></script>
 
-<script src="js/plugins/plugins.js"></script>
+<script src="../../js/plugins/plugins.js"></script>
 
-<script src="js/active.js"></script>
+<script src="../../js/active.js"></script>
 	</body>
 </html>

@@ -11,11 +11,11 @@
     <title>Tran Duc Trung Blog | Home</title>
 
     
-    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="icon" href="../../img/core-img/favicon.ico">
 
     
-    <link rel="stylesheet" href="style.css">
-    <link href="agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link href="../../posts/agency.min.css" rel="stylesheet">
     <style type="text/css">
       table, td, th {
         border: 1px solid black;
@@ -95,7 +95,7 @@
       <nav class="classy-navbar justify-content-between" id="cleverNav">
 
         
-        <a class="nav-brand" href="/"><img src="img/core-img/logo.png" alt=""></a>
+        <a class="nav-brand" href="../../"><img src="../../img/core-img/logo.png" alt=""></a>
 
         
         <div class="classy-menu">
@@ -106,10 +106,10 @@
           
           <div class="classynav">
             <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="about">ABOUT ME</a>
-              <li><a href="posts">POSTS</a></li>
-              <li><a href="contact">CONTACT ME</a></li>
+              <li><a href="../../">HOME</a></li>
+              <li><a href="../../about">ABOUT ME</a>
+              <li><a href="../../posts">POSTS</a></li>
+              <li><a href="../../contact">CONTACT ME</a></li>
             </ul>
           </div>
           
@@ -127,9 +127,9 @@
   <!-- Breadcumb -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item"><a href="/posts">Posts</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Yarn vs Npm</li>
+      <li class="breadcrumb-item"><a href="../../">Home</a></li>
+      <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Gulp vs Webpack?</li>
     </ol>
   </nav>
 </div>
@@ -138,11 +138,11 @@
 <!-- ##### Catagory Area Start ##### -->
 <div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/13.jpg);">
   <div class="blog-details-headline">
-    <h3>Yarn vs Npm</h3>
+    <h3>Gulp vs Webpack?</h3>
     <div class="meta d-flex align-items-center justify-content-center">
-      <a href="/about">Tran Duc Trung</a>
+      <a href="../../about">Tran Duc Trung</a>
       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-      <a href="#">23/07/2018</a>
+      <a href="#">24/07/2018</a>
     </div>
   </div>
 </div>
@@ -155,6 +155,100 @@
       <div class="col-12 col-lg-8">
         <!-- Blog Details Text -->
         <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">Gulp là gì?</h4>
+            <p class="content-1"><strong>       Gulp</strong> là 1 công cụ giúp bạn tự động hóa nhiều task (nhiệm vụ) trong quá trình phát triển web. Nó thường được sử dụng để làm các tác vụ front end như: </p>
+            <ul class="content-2">
+              <li>   + Tạo ra 1 web server</li>
+              <li>   + Auto reload server khi lưu thay đổi 1 file nào đó</li>
+              <li>   + Sử dụng các Preprocessor giống như SASS, LESS, Stylus...</li>
+              <li>   + Tối ưu hóa các file CSS, JS, Image...</li>
+            </ul>
+            <p class="content-1 mt-15">       Về cơ bản thì gulp chia ra làm các task để làm việc, để chạy mỗi task thì ta chỉ cần gõ gulp tên-task. Ví dụ như muốn chạy task js thì chỉ cần gõ<code class="cedo">gulp js</code> là được. </p>
+            <p class="content-1">       Để sử dụng gulp thì đầu tiên ta tải package gulp bằng lệnh <code class="cedo">npm i gulp --dev</code> sau đó tạo 1 file dùng để config tên là <i>gulpfile.js</i></p>
+            <p class="content-1">-> Ta khai báo thư viện gulp bằng cách:<code class="cedo">var gulp = require('gulp');</code></p>
+            <p class="content-1">       Tương tự để sử dụng những tính năng khác của gulp như là auto reload server, convert các file SASS sang CSS, tối ưu hóa các file CSS, JS, Image thì ta cũng cần phải khai báo tương tự</p>
+            <p class="content-1">- Ví dụ để auto reload server thì ta sử dụng package <i>browser-sync</i></p>
+            <p class="content-1">      Khai báo trong <i>gulpfile.js</i></p>
+            <code class="cedo-1 mt-15">
+              var browserSync = require('browser-sync').create();<br/>
+              gulp.task('browserSync', function() {<br/>
+                browserSync.init({<br/>
+                  server: {<br/>
+                    baseDir: 'app'<br/>
+                  },<br/>
+                })<br/>
+              });<br/>
+            </code>
+            <p class="content-1">      Giờ ta muốn khi có 1 file nào đó được chỉnh sửa thì server sẽ tự động reload thì ta thêm đoạn code sau:</p>
+            <code class="cedo-1 mt-15"> 
+              gulp.task('watch', ['browserSync'], function(){<br/>
+                gulp.watch('app/index.html', browserSync.reload);<br/>
+                gulp.watch('app/js/*.js', browserSync.reload);<br/>
+              });<br/>  
+            </code>
+            <p class="content-1">  - Trên command line ta sẽ chạy lệnh<code class="cedo">gulp watch</code></p>
+            <p class="content-1">  -> Ở đây ta dùng<code class="cedo">gulp.watch</code> để theo dõi tất cả những file có đuôi là js trong thư mục app/js và file index.html, bất cứ khi nào các file đó có sự thay đổi thì server sẽ tự động reload</p>
+            <p class="content-1">      Tóm lại Gulp là công cụ tự động hóa tốt, cho phép chúng ta setup một mớ các tiến trình phức tạp cần thực hiện (một cách tự động) bằng javascript, rồi chạy nó bằng một lệnh duy nhất.</p>
+          </ul>
+          <ul>
+            <h4 class="py-4">Webpack là gì?</h4>
+            <p class="content-1"><strong>      Webpack</strong> là 1 công cụ dùng để quản lý phần code client-side. Hay nói cách khác Webpack là 1 module bundler, nó nhận vào các module cùng với các dependencies và generate ra các static assets tương ứng. </p>
+            <p class="content-1">      Đầu tiên để cài đặt webpack, ta chạy lệnh sau:<code class="cedo">npm install webpack --save-dev</code></p>
+            <p class="content-1">      Ví dụ ta có 2 file js và 1 file index.html</p>
+            <ul>
+              <code class="cedo-1">
+                //hello.js<br/>
+                export default function hello(name){ console.log('Hello '+ name); }<br/>
+              <br/>
+                //index.js<br/>
+                improt 'hello' from './hello';<br/>
+                hello('Trung');<br/>
+              <br/>
+                //index.html<br/>
+                &lt;html&gt;<br/>
+                ...<br/>
+                &lt;script src="../../bundle.js"&gt;&lt;/script&gt;<br/>
+                ...<br/>
+                &lt;/html&gt;<br/>
+              </code>
+            </ul>
+            <p class="content-1">      Ta tiến hành tạo 1 file để config tên là webpack.config.js với nội dung như sau:</p>
+            <ul>
+              <code class="cedo-1">
+                module.exports = {<br/>
+                  entry: './index.js',<br/>
+                  output: { filename: 'bundle.js' }<br/>
+                }<br/>
+              </code>
+            </ul>
+            <p class="content-1">      Khi ta chạy webpack trên command line và sau khi chạy file index.html ta sẽ thấy xuất hiện dòng chữ: <i>Hello Trung</i></p>
+            <p class="content-1">      Như vậy, webpack đã bundle ra cho chúng ta 1 file tên là bundle.js từ 2 file hello.js và index.js. Và file index.html chỉ việc sử dụng file bundle.js đó để xuất ra kết quả trên màn hình.</p>
+            <p class="content-1">      <strong>Watchmode:</strong> Watchmode sẽ giúp ta theo dõi files, và khi chúng có bất kì thay đổi nào, nó sẽ ngay lập tức build và xuất ra file output.</p>
+            <ul class="content-2">
+              <li>+ Từ command line gõ dòng lệnh:<code class="cedo">webpack --watch</code></li>
+              <li>+ Trong file config, ta sẽ thêm một key là watch và đặt nó là true</li>
+              <code class="cedo-1 mt-15">
+                module.exports = {<br/>
+                  entry: './index.js',<br/>
+                  output: { filename: 'bundle.js' },<br/>
+                  watch: true<br/>
+                }<br/>
+              </code>
+            </ul>
+            <p class="content-1"><strong><i>Sau khi đặt watch thành true, mỗi khi chạy webpack, nó sẽ tự động rebuild file bundle mỗi khi có thay đổi.</i></strong></p>
+          </ul>
+          <ul>
+            <h4 class="py-4">Gulp vs Webpack</h4>
+            <p class="content-1"><strong>Giống nhau:</strong> Đều chạy trên nền Node.js và đều dùng file JS để config</p>
+            <p class="content-1"><strong>Khác nhau:</strong></p>
+            <ul class="content-2">
+              <li>+ <strong>Gulp: Task runner</strong>, có nhiệm vụ là compile SASS sang CSS, tối ưu hóa các tệp JS, CSS, Image... </li>
+              <li>+ <strong>Webpack: Module bundler</strong>, có nhiệm vụ là tạo ra những file tài nguyên tĩnh từ những module cần thiết, nén file JS thành 1 file bundle.js duy nhất</li>
+            </ul>
+            <p class="content-1 mt-15">      Vấn đề với Gulp là nếu code file A depend vào code ở file B, bạn cần báo cáo với Gulp để nó include file A trước, và khi bạn thêm càng lúc càng nhiều file depend chồng chéo kiểu này, cây dependency là lớn  dần, và sẽ gần như không thể maintain được nữa, vì chúng ta phải config bằng tay. Trong khi đó thì webpack sẽ tự động dựng lên cây dependency và bundle ra duy nhất 1 file cho chúng ta.</p>
+            <p class="content-1">      Gulp chạy lệnh để build scss ra file css nhưng Webpack sẽ nén các file vào file bundle.js mà không build file css.</p>
+          </ul>
           <!-- Tags -->
         </div>
       </div>
@@ -169,20 +263,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="/img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/13.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="/posts/the-nao-la-prototype" class="blog-headline">
-                <h4>Thế nào là Prototype</h4>
+              <a href="../../posts/yarn-vs-npm" class="blog-headline">
+                <h4>Yarn vs npm?</h4>
               </a>
               <div class="meta d-flex align-items-center">
-                <a href="/about">Tran Duc Trung</a>
+                <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="/posts/the-nao-la-prototype">21/07/2018</a>
+                <a href="../../posts/yarn-vs-npm">23/07/2018</a>
               </div>
-              <p>- Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...</p>
+              <p>Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs...</p>
               <div>
-                <a href="/posts/the-nao-la-prototype"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/yarn-vs-npm"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>
@@ -190,20 +284,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="/img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/13.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="/posts/yarn-vs-npm" class="blog-headline">
-                <h4>Yarn vs npm?</h4>
+              <a href="../../posts/ecmascript-2015-es6-la-gi" class="blog-headline">
+                <h4>ECMAScript2015 (ES6) và Arrow Function</h4>
               </a>
               <div class="meta d-flex align-items-center">
-                <a href="/about">Tran Duc Trung</a>
+                <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="/posts/yarn-vs-npm">23/07/2018</a>
+                <a href="../../posts/ecmascript-2015-es6-la-gi">25/07/2018</a>
               </div>
-              <p>Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs...</p>
+              <p>ES6 là chữ viết tắt của ECMAScript 6, là một tập hợp các kỹ thuật nâng cao của Javascript...</p>
               <div>
-                <a href="/posts/yarn-vs-npm"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/ecmascript-2015-es6-la-gi"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>
@@ -224,7 +318,7 @@
                 <div class="col-12">
                     
                     <div class="footer-logo">
-                        <a href="/"><img src="img/core-img/logo2.png" alt=""></a>
+                        <a href="../../"><img src="../../img/core-img/logo2.png" alt=""></a>
                     </div>
                     
                     <p><a href="#">
@@ -255,14 +349,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	    
 	    
-<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<script src="../../js/jquery/jquery-2.2.4.min.js"></script>
 
-<script src="js/bootstrap/popper.min.js"></script>
+<script src="../../js/bootstrap/popper.min.js"></script>
 
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="../../js/bootstrap/bootstrap.min.js"></script>
 
-<script src="js/plugins/plugins.js"></script>
+<script src="../../js/plugins/plugins.js"></script>
 
-<script src="js/active.js"></script>
+<script src="../../js/active.js"></script>
 	</body>
 </html>

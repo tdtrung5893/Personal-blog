@@ -11,11 +11,11 @@
     <title>Tran Duc Trung Blog | Home</title>
 
     
-    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="icon" href="../../img/core-img/favicon.ico">
 
     
-    <link rel="stylesheet" href="style.css">
-    <link href="agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link href="../../agency.min.css" rel="stylesheet">
     <style type="text/css">
       table, td, th {
         border: 1px solid black;
@@ -95,7 +95,7 @@
       <nav class="classy-navbar justify-content-between" id="cleverNav">
 
         
-        <a class="nav-brand" href="/"><img src="img/core-img/logo.png" alt=""></a>
+        <a class="nav-brand" href="../../"><img src="../../img/core-img/logo.png" alt=""></a>
 
         
         <div class="classy-menu">
@@ -106,10 +106,10 @@
           
           <div class="classynav">
             <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="about">ABOUT ME</a>
-              <li><a href="posts">POSTS</a></li>
-              <li><a href="contact">CONTACT ME</a></li>
+              <li><a href="../../">HOME</a></li>
+              <li><a href="../../about">ABOUT ME</a>
+              <li><a href="../../posts">POSTS</a></li>
+              <li><a href="../../contact">CONTACT ME</a></li>
             </ul>
           </div>
           
@@ -127,22 +127,22 @@
   <!-- Breadcumb -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item"><a href="/posts">Posts</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Yarn vs Npm</li>
+      <li class="breadcrumb-item"><a href="../../">Home</a></li>
+      <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">ECMAScript2015 (ES6) và Arrow Function</li>
     </ol>
   </nav>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### Catagory Area Start ##### -->
-<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(/img/blog-img/13.jpg);">
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/13.jpg);">
   <div class="blog-details-headline">
-    <h3>Yarn vs Npm</h3>
+    <h3>ECMAScript2015 (ES6) và Arrow Function</h3>
     <div class="meta d-flex align-items-center justify-content-center">
-      <a href="/about">Tran Duc Trung</a>
+      <a href="../../about">Tran Duc Trung</a>
       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-      <a href="#">23/07/2018</a>
+      <a href="#">25/07/2018</a>
     </div>
   </div>
 </div>
@@ -155,6 +155,67 @@
       <div class="col-12 col-lg-8">
         <!-- Blog Details Text -->
         <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">ECMAScript2015 (ES6) là gì?</h4>
+            <p class="content-1"><strong>- ES6</strong> là chữ viết tắt của <strong>ECMAScript 6</strong>, là một tập hợp các kỹ thuật nâng cao của Javascript và là phiên bản mới nhất của chuẩn ECMAScript</p>
+            <p class="content-1"><strong>- Những điểm mới của ECMAScript2015</strong></p>
+            <ul class="content-2">
+              <li>   + <strong>Arrow function:</strong> Tạo hàm bằng cách sử dụng dấu mũi tên =></li>
+              <li>   + <strong>Block Scoped:</strong> Định nghĩa biến với từ khóa let, cách định nghĩa này thì biến chỉ tồn tại trong phạm vi khối của nó (Block Scope)</li>
+              <li>   + <strong>Destructuring Assignments:</strong> Khởi tạo các biến từ một mảng bằng một dòng code.</li>
+              <li>   + <strong>Default Parameters:</strong> Gán giá trị mặc định cho các tham số.</li>
+              <li>   + <strong>Template String:</strong> Tạo templaet HTML</li>
+              <li>   + <strong>Weak, Set:</strong> các kiểu dữ liệu phức tạp mới</li>
+              <li>   + <strong>Rest Parameters:</strong> Khai báo 1 hàm với số lượng tham số không xác định</li>
+              <li>   + <strong>Multi-line String:</strong> Đơn giản là sử dụng dấu backticks để khai báo 1 chuôi có nhiều dòng</li>
+              <li>   + <strong>Classes:</strong> Có thể viết Class và kế thừa, giống như là OOP</li>
+              <li>   + <strong>Module:</strong> Thêm khả năng import và export</li>
+              <li>   + <strong>Babel:</strong> ES6 vẫn còn chưa được nhiều trình duyệt hỗ trợ cho nên cần phải sử dụng trình biên dịch như babel để dịch lại sang mã ES5 để có thể chạy trên browser</li>
+            </ul>
+            <h4 class="py-4">Thế nào là Arrow Function?</h4>
+            <p class="content-1"><strong>- Arrow Function (Fat Arrow):</strong> Là một cách định nghĩa function mới trong ES6 bằng cách sử dụng dấu mũi tên =>. Nó giúp tiết kiệm thời gian phát triển và đơn giản hóa phạm vi function</p>
+            <p class="content-1"><strong>- Cách thức sử dụng Arrow Function:</strong></p>
+            <p class="content-1"><i>- Cách thông thường:</i></p>
+            <ul class="content-2">
+              <code class="cedo-1 mt-15">
+                function hello(name) {<br/>
+                  console.log('My name is' + name);<br/>
+                }<br/>
+                hello('Trung')    // My name is Trung<br/>
+              </code>
+            </ul>
+            <p class="content-1"><i>- Trong ES6:</i></p>
+            <ul class="content-2">
+              <code class="cedo-1 mt-15">
+                var hello = (name) => {<br/>
+                  console.log('My name is' + name);<br/>
+                }<br/>
+                hello('Trung')    // My name is Trung<br/>
+              </code>
+            </ul>
+            <p class="content-1">- Nếu câu lệnh trong function là 1 câu lệnh đơn thì ta có thể bỏ đi dấu {}.</p>
+            <code class="cedo-1 mt-15">
+              var hello = (name) => console.log('My name is' + name);
+            </code>
+            <p class="content-1">- Nếu trường hợp chỉ có 1 tham số thì ta có thể bỏ đi dấu ()</p>
+            <code class="cedo-1 mt-15">
+              var hello = name => console.log('My name is' + name);
+            </code>
+            <p class="content-1">- Trường hợp không có tham số thì bắt buộc phải sử dụng cặp ngoặc tròn ()</p>
+            <code class="cedo-1 mt-15">
+              var hello = () 
+                => console.log('Hello world');    // Error  
+            </code>
+            <p class="content-1">- <i>Ràng buộc của mũi tên:</i> Mũi tên => phải đứng ngay sau dấu đóng ngoặc tròn trong phần khai báo tham số, không được phép xuống dòng</p>
+            <code class="cedo-1 mt-15">
+              var hello = () => console.log('Hello world');
+            </code>
+            <p class="content-1"><strong>- Những điều cần lưu ý:</strong></p>
+            <ul class="content-2">
+              <li>+ <strong>This:</strong> Arrow function tạo ra hành vi của thuộc tính this. Các phương thức call (), apply (), và bind () sẽ không thay đổi giá trị của this trong arrow function</li>
+              <li>+ <strong>Constructors:</strong> Arrow function không thể được sử dụng làm constructor như function. Nếu khởi tạo new với arrow function, nó sẽ báo lỗi. Arrow function không có thuộc tính prototype hay internal methods</li>
+            </ul>
+          </ul>
           <!-- Tags -->
         </div>
       </div>
@@ -169,20 +230,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="/img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/13.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="/posts/the-nao-la-prototype" class="blog-headline">
-                <h4>Thế nào là Prototype</h4>
+              <a href="../../posts/gulp-vs-webpack" class="blog-headline">
+                <h4>Gulp vs Webpack?</h4>
               </a>
               <div class="meta d-flex align-items-center">
-                <a href="/about">Tran Duc Trung</a>
+                <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="/posts/the-nao-la-prototype">21/07/2018</a>
+                <a href="../../posts/gulp-vs-webpack">24/07/2018</a>
               </div>
-              <p>- Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...</p>
+              <p>Gulp là 1 công cụ giúp bạn tự động hóa nhiều task (nhiệm vụ) trong quá trình phát...</p>
               <div>
-                <a href="/posts/the-nao-la-prototype"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/gulp-vs-webpack"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>
@@ -190,20 +251,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="/img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/13.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="/posts/yarn-vs-npm" class="blog-headline">
-                <h4>Yarn vs npm?</h4>
+              <a href="../../posts/promise-vs-async-await" class="blog-headline">
+                <h4>Promise vs Async Await</h4>
               </a>
               <div class="meta d-flex align-items-center">
-                <a href="/about">Tran Duc Trung</a>
+                <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="/posts/yarn-vs-npm">23/07/2018</a>
+                <a href="../../posts/promise-vs-async-await">26/07/2018</a>
               </div>
-              <p>Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs...</p>
+              <p>- Trước đây trong Javascript kết quả của 1 tác vụ bất đồng bộ sẽ trả về 1 kiểu dữ liệu nào đó...</p>
               <div>
-                <a href="/posts/yarn-vs-npm"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/promise-vs-async-await"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>
@@ -224,7 +285,7 @@
                 <div class="col-12">
                     
                     <div class="footer-logo">
-                        <a href="/"><img src="img/core-img/logo2.png" alt=""></a>
+                        <a href="../../"><img src="../../img/core-img/logo2.png" alt=""></a>
                     </div>
                     
                     <p><a href="#">
@@ -255,14 +316,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	    
 	    
-<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<script src="../../js/jquery/jquery-2.2.4.min.js"></script>
 
-<script src="js/bootstrap/popper.min.js"></script>
+<script src="../../js/bootstrap/popper.min.js"></script>
 
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="../../js/bootstrap/bootstrap.min.js"></script>
 
-<script src="js/plugins/plugins.js"></script>
+<script src="../../js/plugins/plugins.js"></script>
 
-<script src="js/active.js"></script>
+<script src="../../js/active.js"></script>
 	</body>
 </html>

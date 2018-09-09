@@ -129,7 +129,7 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="../../">Home</a></li>
       <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Typescript là gì?</li>
+      <li class="breadcrumb-item active" aria-current="page">Promise vs Async Await</li>
     </ol>
   </nav>
 </div>
@@ -138,11 +138,11 @@
 <!-- ##### Catagory Area Start ##### -->
 <div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/13.jpg);">
   <div class="blog-details-headline">
-    <h3>Typescript là gì?</h3>
+    <h3>Promise vs Async Await</h3>
     <div class="meta d-flex align-items-center justify-content-center">
       <a href="../../about">Tran Duc Trung</a>
       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-      <a href="#">30/07/2018</a>
+      <a href="#">26/07/2018</a>
     </div>
   </div>
 </div>
@@ -156,57 +156,107 @@
         <!-- Blog Details Text -->
         <div class="blog-details-text">
           <ul>
-            <h4 class="py-4">Typescript là gì?</h4>
-            <p class="content-1"><strong>- TypeScript</strong> là một dự án mã nguồn mở được phát triển bởi Microsoft, nó có thể được coi là một phiên bản nâng cao của Javascript bởi việc bổ sung tùy chọn kiểu tĩnh và lớp hướng đối tượng mà điều này không có ở Javascript. <strong>TypeScript</strong> có thể sử dụng để phát triển các ứng dụng chạy ở client-side (Angular2) và server-side (NodeJS).</p>
-            <p class="content-1"><strong>- Đặc điểm của TypeScript:</strong></p>
+            <h4 class="py-4">Promise là gì?</h4>
+            <p class="content-1">- Trước đây trong Javascript kết quả của 1 tác vụ bất đồng bộ sẽ trả về 1 kiểu dữ liệu nào đó hoặc là thực hiện 1 callback funtion, tuy nhiên nếu sử dụng callback funtion 1 cách không hợp lý, tiêu biểu là trong trường hợp sử dụng callback lồng nhau quá nhiều dẫn đến việc không kiểm soát được chương trình hay bộ nhớ không đủ để hoạt động. Và trong ES6 có 1 tính năng mới gọi là Promise giúp xử lý vấn đề bất đồng bộ hiệu quả hơn.</p>
+            <p class="content-1"><strong>- Promise</strong> sinh ra để xử lý kết quả của một hành động cụ thể, kết quả của mỗi hành động sẽ là thành công hoặc thất bại</p>
+            <p class="content-1"><strong>- 1 promise được khởi tạo thì sẽ có 3 trạng thái:</strong></p>
             <ul class="content-2">
-              <li>+ TypeScript là ngôn ngữ cha của JavaScript. Điều này có nghĩa là tất cả các tính năng của JavaScript đều có trong TypeScript</li>
-              <li>+ TypeScript hỗ trợ static typing. Trong khi JavaScript là ngôn ngữ lập trình kiểu động (dynamic typed) điều này cho phép lập trình viên không cần phải định nghĩa kiểu dữ liệu cho biến hoặc giá trị trả về từ hàm... Ngược lại, TypeScript là ngôn ngữ kiểu tĩnh (static typed) điều này có nghĩa là ta cần định nghĩa kiểu dữ liệu cho giá trị của biến hoặc giá trị trả về của hàm.</li>
-              <li>+ TypeScript hỗ trợ lập trình hướng đối tượng theo lớp (Class). JavaScript hỗ trợ lập trình hướng đối tượng nhưng theo kiểu prototype. Ngược lại TypeScript hỗ trợ sử dụng viết các class.</li>
-              <li>+ Là mã nguồn mở: TypeScript là một mã nguồn mở nên ta hoàn toàn có thể sử dụng miễn phí, bên cạnh đó còn được cộng đồng hỗ trợ.</li>
+              <li>+ <strong>Fulfilled:</strong> Hành động đã xử lý xong và thành công </li>
+              <li>+ <strong>Rejected:</strong> Hành động đa xử lý xong và thất bại</li>
+              <li>+ <strong>Pending:</strong> Hành động đang chờ xử lý</li>
             </ul>
-            <p class="content-1 mt-15"><strong>- Cài đặt TypeScript:</strong></p>
-            <code class="cedo-1 mt-15">
-              npm install -g typescript
-            </code>
-            <p class="content-1">-> Để compile thì ta dùng câu lệnh:<code class="cedo">tsc filename.js</code></p>
-            <p class="content-1"><strong>- Kiểu dữ liệu trong TypeScript:</strong> Các loại kiểu dữ liệu cơ bản trong TypeScript như là: string, boolean, array, number, date, enum...</p>
-            <p class="content-1">Để khai báo 1 biến thì ta dùng cú pháp:</p>
-            <code class="cedo-1">let ten_bien : kieu_du_lieu = gia_tri_bien</code>
-            <p class="content-1">Ví dụ:</p>
+            <p class="content-1 mt-15"><strong>- Khởi tạo 1 Promise:</strong></p>
             <ul class="content-2">
               <code class="cedo-1 mt-15">
-                let name : string = "Tran Duc Trung";
+                var promise = new Promise(callback);
               </code>
             </ul>
-            <p class="content-1"><strong>- Khai báo function trong TypeScript:</strong> TypeScript hỗ trợ việc khai báo với các kiểu trả ra của function và cũng như kiểu đầu vào của dữ liệu. Ví dụ:</p>
+            <p class="content-1">Trong đó callback là 1 function với 2 tham số là <strong>resolve</strong> và <strong>reject</strong></p>
             <ul class="content-2">
               <code class="cedo-1 mt-15">
-                function add(x: number, y: number): number {<br/>
-                  return x+y;<br/>
+                var promise = new Promise(function(resolve, reject){<br/>
+                // Code here<br/>
+                }); <br/>
+              </code>
+            </ul>
+            <ul class="content-2">
+              <li>+ <strong>resolve</strong> là một hàm callback xử lý cho hành động thành công.</li>
+              <li>+ <strong>reject</strong> là một hàm callback xử lý cho hành động thất bại.</li>
+            </ul>
+            <p class="content-1 mt-15">- <strong>Then</strong> trong Promise là 1 phương thức ghi nhận kết quả của trạng thái</p>
+            <ul class="content-2">
+              <code class="cedo-1 mt-15">
+                var promise = new Promise(function(resolve, reject){<br/>
+                  resolve('Success!'); <br/>
+                });<br/>
+                promise.then(<br/>
+                  function(success){<br/>
+                    console.log(success);<br/>
+                  }<br/>
+                );<br/>
+              </code>
+            </ul>
+            <p class="content-1">- <strong>Catch</strong> trong Promise dùng để bắt lỗi khi bị từ chối</p>
+            <ul class="content-2">
+              <code class="cedo-1 mt-15">
+                var promise = new Promise(function(resolve, reject){<br/>
+                  reject('Error!');<br/>
+                });<br/>
+                promise<br/>
+                  .then(function(message){<br/>
+                    console.log(message);<br/>
+                  })<br/>
+                  .catch(function(message){<br/>
+                    console.log(message);<br/>
+                  });<br/>
+              </code>
+            </ul>
+            <p class="content-1">- <strong>Promise.all:</strong> Phương thức all dùng để tập hợp lại những promise cần kết thúc và trả ra kết quả đại diện khi tất cả các promise đó kết thúc xử lý thành công, còn khi có 1 promise nào đấy thất bại thì kết quả đại diện cũng sẽ ở trạng thái lỗi</p>
+            <ul class="content-2">
+              <code class="cedo-1 mt-15">
+                hello()<br/>
+                  .then(function() {<br/>
+                    return Promise.all([<br/>
+                      get_name(),<br/>
+                      get_age()<br/>
+                    ])<br/>
+                  })<br/>
+                  .then(profile)<br/>
+                  .catch(console.error.bind(console));<br/>
+              </code>
+            </ul>
+            <h4 class="py-4">Async/Await là gì?</h4>
+            <p class="content-1"><strong>- Async/Await</strong> là một tính năng của JavaScript giúp chúng ta làm việc với các hàm bất đồng bộ theo cách thú vị hơn và dễ hiểu hơn. Nó được xây dựng trên Promises và tương thích với tất cả các Promise dựa trên API. Hàm async cho phép ta viết các thao tác bất đồng bộ với phong cách của các mã đồng bộ.</p>
+            <p class="content-1"><strong>- Để sử dụng hàm async, ta cần khai báo từ khóa async ngay trước từ khóa định nghĩa hàm:</strong></p>
+            <code class="cedo-1 mt-15">
+              async function someName(){...}<br/>
+            </code>
+            <p class="content-1">-> Kết quả trả ra của hàm async luôn là một Promise. Promise này sẽ ở trạng thái thành công với kết quả được trả ra với từ khóa return của hàm async, hoặc trạng thái thất bại với kết quả được đẩy qua từ khóa throw trong hàm async.</p>
+            <p class="content-1">-> Ngoài ra thì Async cho phép sử dụng Await để tạm dừng việc thực hiện các hàm async.</p>
+            <code class="cedo-1 mt-15">
+              var result = await someAsyncCall ()<br/>
+            </code>
+            <p class="content-1"><strong>Đặc điểm của Async/Await:</strong></p>
+            <ul class="content-2">
+              <li>+ Khi được đặt trước một Promise, nó sẽ đợi cho đến khi Promise kết thúc và trả về kết quả.</li>
+              <li>+ Await chỉ làm việc với Promises, nó không hoạt động với callbacks.</li>
+              <li>+ Await chỉ có thể được sử dụng bên trong các function async.</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>Xử lý lỗi trong hàm async với try...catch:</strong></p>
+            <ul class="content-2">
+              <code class="cedo-1 mt-15">
+                const makeRequest = async () => {<br/>
+                  try {<br/>
+                    const data = JSON.parse(await getJSON())<br/>
+                    console.log(data)<br/>
+                  } catch (err) {<br/>
+                    console.log(err)<br/>
+                  }<br/>
                 }<br/>
               </code>
             </ul>
-            <p class="content-1">hoặc: </p>
-            <code class="cedo-1 mt-15">
-              var myAdd = function(x: number, y: number): number { return x+y; };
-            </code>
-            <p class="content-1"><strong>- Khai báo Class trong TypeScript:</strong></p>
-            <ul class="content-2">
-              <code class="cedo-1 mt-15">
-                class Profile {<br/>
-                  Name: string<br/>
-                  constructor(mess: string){<br/>
-                    this.Name = mess;<br/>
-                  }<br/>
-                  getName() {<br/>
-                    return "Hello " + this.Name;<br/>
-                  }<br/>
-                }<br/>
-                let myName = new Profile("Trung");<br/>
-                myName.getName();    // Hello Trung<br/>
-              </code>
-            </ul>
+            <p class="content-1">-> Mệnh đề catch sẽ xử lý các lỗi gây ra bởi các hàm bất đồng bộ hoặc bất kỳ lỗi nào chúng ta có thể đã viết bên trong khối try.</p>
+            <p class="content-1"><strong>- Async / Await có thể sử dụng trong hầu hết các trình duyệt chính, ngoại trừ IE11 - tất cả các trình duyệt sẽ nhận ra mã async/await mà không cần các thư viện bên ngoài.</strong></p>
           </ul>
           <!-- Tags -->
         </div>
@@ -225,6 +275,27 @@
             <img src="../../img/blog-img/13.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
+              <a href="../../posts/ecmascript-2015-es6-la-gi" class="blog-headline">
+                <h4>ECMAScript2015 (ES6) và Arrow Function</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="../../about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="../../posts/ecmascript-2015-es6-la-gi">25/07/2018</a>
+              </div>
+              <p>ES6 là chữ viết tắt của ECMAScript 6, là một tập hợp các kỹ thuật nâng cao của Javascript...</p>
+              <div>
+                <a href="../../posts/ecmascript-2015-es6-la-gi"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="../../img/blog-img/13.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
               <a href="../../posts/su-dung-eslint" class="blog-headline">
                 <h4>Sử dụng ESLint</h4>
               </a>
@@ -236,27 +307,6 @@
               <p>- Lint là những công cụ giúp chúng ta phân tích code, từ đó đưa ra các vấn đề mà...</p>
               <div>
                 <a href="../../posts/su-dung-eslint"><button class="btn btn-success mt-3">Read more</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Single Blog Area -->
-        <div class="col-12 col-md-6">
-          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="../../img/blog-img/13.jpg" alt="">
-            <!-- Blog Content -->
-            <div class="blog-content">
-              <a href="../../posts/tim-hieu-ve-lodash" class="blog-headline">
-                <h4>Tìm hiểu về Lodash</h4>
-              </a>
-              <div class="meta d-flex align-items-center">
-                <a href="../../about">Tran Duc Trung</a>
-                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="../../posts/tim-hieu-ve-lodash">31/07/2018</a>
-              </div>
-              <p>- Lodash là phiên bản mở rộng hơn của underscore, với nhiều chức năng hơn và có hiệu năng...</p>
-              <div>
-                <a href="../../posts/tim-hieu-ve-lodash"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>

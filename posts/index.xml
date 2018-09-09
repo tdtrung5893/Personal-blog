@@ -12,22 +12,13 @@
     
     <item>
       <title></title>
-      <link>https://tdtrung5893.github.io/Personal-blog/posts/arrow-function/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tdtrung5893.github.io/Personal-blog/posts/arrow-function/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+      <description>Home Posts ECMAScript2015 (ES6) và Arrow Function    ECMAScript2015 (ES6) và Arrow Function Tran Duc Trung  25/07/2018     ECMAScript2015 (ES6) là gì? - ES6 là chữ viết tắt của ECMAScript 6, là một tập hợp các kỹ thuật nâng cao của Javascript và là phiên bản mới nhất của chuẩn ECMAScript
+- Những điểm mới của ECMAScript2015
+ + Arrow function: Tạo hàm bằng cách sử dụng dấu mũi tên =  + Block Scoped: Định nghĩa biến với từ khóa let, cách định nghĩa này thì biến chỉ tồn tại trong phạm vi khối của nó (Block Scope)  + Destructuring Assignments: Khởi tạo các biến từ một mảng bằng một dòng code.</description>
     </item>
     
     <item>
@@ -55,8 +46,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/gulp-vs-webpack/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+      <description>Home Posts Gulp vs Webpack?    Gulp vs Webpack? Tran Duc Trung  24/07/2018     Gulp là gì?  Gulp là 1 công cụ giúp bạn tự động hóa nhiều task (nhiệm vụ) trong quá trình phát triển web. Nó thường được sử dụng để làm các tác vụ front end như:  + Tạo ra 1 web server  + Auto reload server khi lưu thay đổi 1 file nào đó  + Sử dụng các Preprocessor giống như SASS, LESS, Stylus.</description>
     </item>
     
     <item>
@@ -80,6 +70,15 @@
     
     <item>
       <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/promise-vs-async-await/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/promise-vs-async-await/</guid>
+      <description>Home Posts Promise vs Async Await    Promise vs Async Await Tran Duc Trung  26/07/2018     Promise là gì? - Trước đây trong Javascript kết quả của 1 tác vụ bất đồng bộ sẽ trả về 1 kiểu dữ liệu nào đó hoặc là thực hiện 1 callback funtion, tuy nhiên nếu sử dụng callback funtion 1 cách không hợp lý, tiêu biểu là trong trường hợp sử dụng callback lồng nhau quá nhiều dẫn đến việc không kiểm soát được chương trình hay bộ nhớ không đủ để hoạt động.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://tdtrung5893.github.io/Personal-blog/posts/scope-va-closure-trong-javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -95,18 +94,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/su-dung-eslint/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-async-await/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tdtrung5893.github.io/Personal-blog/posts/the-nao-la-async-await/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+      <description>Home Posts Sử dụng ESLint    Sử dụng ESLint Tran Duc Trung  29/07/2018     Sử dụng ESLint? - Lint là những công cụ giúp chúng ta phân tích code, từ đó đưa ra các vấn đề mà code đang gặp phải như không tuân thủ coding style, sai coding convention. Ngoài ra, lint còn có thể giúp chúng ta tìm ra một số bug tiềm ẩn trong code như gán biến chưa khai báo, có thể gây lỗi runtime hoặc lấy giá trị từ một biến toàn cục khiến cho việc debug trở nên khó khăn.</description>
     </item>
     
     <item>
@@ -125,8 +113,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-axios/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+      <description>Home Posts Tìm hiểu về Axios    Tìm hiểu về Axios Tran Duc Trung  01/08/2018     Lodash là gì? - Axios là 1 HTTP Client được viết dựa trên Promises được dùng để hỗ trợ cho việc xây dựng các ứng dụng API và có thể được sử dụng ở cả trình duyệt hay Node.js
+- Cài đặt:
+npm install axios --save-dev  - Các Request có thể được tạo ra bằng cách chỉ định các config thích hợp cho axios.</description>
     </item>
     
     <item>
@@ -145,18 +134,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-lodash/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+      <description>Home Posts Tìm hiểu về Lodash    Tìm hiểu về Lodash Tran Duc Trung  31/07/2018     Lodash là gì? - Lodash là phiên bản mở rộng hơn của underscore, với nhiều chức năng hơn và có hiệu năng cao hơn. Lodash có nhiều chức năng và có thể chia ra thành: chức năng hỗ trợ xử lý Array, chức năng xử lý Object, chức năng xử lý Array, nhóm xử lý Date, Function, Lang, Math, Number.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-promise-javascript/</link>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-reactjs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-promise-javascript/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-reactjs/</guid>
+      <description>Home Posts Tìm hiểu về ReactJs    Tìm hiểu về ReactJs Tran Duc Trung  03/08/2018     ReactJs gì? - ReactJs là 1 thư viện JavaScript được tạo ra bởi facebook và instagram, nó cho phép các developer tạo ra giao diện người dùng (UI)
+- Các lí do nên sử dụng React:
+ + React tạo ra cho chính nó DOM ảo và ReactJS cũng tính toán những thay đổi nào cần cập nhật lên DOM và chỉ thực hiện chúng ~ giúp cải thiện hiệu suất rất nhiều  + React sử dụng cú pháp JSX giúp cho việc viết các đoạn code JS dễ dàng hơn.</description>
     </item>
     
     <item>
@@ -195,8 +184,7 @@ function person(age, name) { this.myage = age; this.myname = name; } var people 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/typescript-la-gi/</guid>
-      <description>Home Posts Yarn vs Npm    Yarn vs Npm Tran Duc Trung  23/07/2018        More posts  Thế nào là Prototype  Tran Duc Trung  21/07/2018  - Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...
- Read more     Yarn vs npm?  Tran Duc Trung  23/07/2018  Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs.</description>
+      <description>Home Posts Typescript là gì?    Typescript là gì? Tran Duc Trung  30/07/2018     Typescript là gì? - TypeScript là một dự án mã nguồn mở được phát triển bởi Microsoft, nó có thể được coi là một phiên bản nâng cao của Javascript bởi việc bổ sung tùy chọn kiểu tĩnh và lớp hướng đối tượng mà điều này không có ở Javascript. TypeScript có thể sử dụng để phát triển các ứng dụng chạy ở client-side (Angular2) và server-side (NodeJS).</description>
     </item>
     
     <item>
