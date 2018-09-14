@@ -8,7 +8,7 @@
     
 
     
-    <title>Tran Duc Trung Blog | Home</title>
+    <title>Tran Duc Trung Blog | Posts</title>
 
     
     <link rel="icon" href="../../img/core-img/favicon.ico">
@@ -129,20 +129,20 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="../../">Home</a></li>
       <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Yarn vs Npm</li>
+      <li class="breadcrumb-item active" aria-current="page">Tìm hiểu về Presentational/Container Components</li>
     </ol>
   </nav>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### Catagory Area Start ##### -->
-<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/13.jpg);">
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/14.jpg);">
   <div class="blog-details-headline">
-    <h3>Yarn vs Npm</h3>
+    <h3>Tìm hiểu về Presentational/Container Components</h3>
     <div class="meta d-flex align-items-center justify-content-center">
       <a href="../../about">Tran Duc Trung</a>
       <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-      <a href="#">23/07/2018</a>
+      <a href="#">12/08/2018</a>
     </div>
   </div>
 </div>
@@ -155,6 +155,54 @@
       <div class="col-12 col-lg-8">
         <!-- Blog Details Text -->
         <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">Container Components</h4>
+            <p class="content-1"><strong>- Container Components:</strong> Là những component mà nhiệm vụ chính của nó là liên kết với Store của project và fetching dữ liệu. Sau khi đã fetching dữ liệu thì các container component sẽ có những xử lý logic và truyền kết quả cuối cùng tới những component thuần hay còn gọi là Presentational Component.</p>
+            <h4 class="py-4">Presentational Component</h4>
+            <p class="content-1"><strong>- Presentational Component:</strong> Là những component mà nhiệm vụ chính của nó là hiển thị dữ liệu ra màn hình và tại đây sẽ không có bất cứ các xử lý logic nào bên trong cả.</p>
+            <p class="content-1">- Ví dụ: Ta có 1 <strong>Container Component</strong> dùng để kéo dữ liệu từ Store</p>
+            <code class="cedo-1">
+              function PostList({ newPosts }) {<br/>
+                return (<br/>
+                  &lt;div&gt;<br/>
+                    {newPosts.map(post => {<br/>
+                      return (<br/>
+                        &lt;Post post={ post } key={ post.id } /&gt;<br/>
+                      );<br/>
+                    })}<br/>
+                  &lt;/div&gt;<br/>
+                );<br/>
+              }<br/>
+            <br/>
+              function mapStateToProps(state){<br/>
+                return {<br/>
+                  newPosts: state.posts<br/>
+                };<br/>
+              };<br/>
+            <br/>
+              export default connect(mapStateToProps, null)(PostList);<br/>
+            </code>
+            <p class="content-1">- và 1 <strong>Presentational component</strong> dùng để hiển thị dữ liệu</p>
+            <code class="cedo-1">
+              class Post extends Component{<br/>
+                render(){<br/>
+                  let { post } = this.props<br/>
+                  return(<br/>
+                    &lt;div&gt;<br/>
+                      &lt;h2&gt;{ post.title }&lt;/h2&gt;<br/>
+                      &lt;p&gt;{ post.body }&lt;/p&gt;<br/>
+                    &lt;/div&gt;<br/>
+                  <br/>
+                }<br/>
+              }<br/>
+            </code>
+            <p class="content-1">- Lợi ích chính của việc phân tách <strong>presentation component</strong> và <strong>contatiner</strong> chính là nâng cao được khả năng tái sử dụng các component. Ngoài ra thì nó còn giúp App của chúng ta trông clean hơn, dễ maintain hơn và tách biệt giữa phần xử lý logic và phần view.</p>
+          </ul>
+          <div class="post-tags">
+            <ul>
+              <li><a href="../../tags/reactjs">ReactJs</a></li>
+            </ul>
+          </div>
           <!-- Tags -->
         </div>
       </div>
@@ -169,20 +217,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="../../img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/14.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="../../posts/the-nao-la-prototype" class="blog-headline">
-                <h4>Thế nào là Prototype</h4>
+              <a href="../../posts/flux-vs-redux" class="blog-headline">
+                <h4>Flux vs Redux</h4>
               </a>
               <div class="meta d-flex align-items-center">
                 <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="../../posts/the-nao-la-prototype">21/07/2018</a>
+                <a href="../../posts/flux-vs-redux">11/08/2018</a>
               </div>
-              <p>- Trong JavaScript thì mọi thứ đều là Object (ngoại trừ Undefine và Null) và Object function...</p>
+              <p>- Flux là 1 kiểu kiến trúc phát triển ứng dụng dùng để thiết kế UI trong các ứng dụng web. Nó giúp làm việc...</p>
               <div>
-                <a href="../../posts/the-nao-la-prototype"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/flux-vs-redux"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>
@@ -190,20 +238,20 @@
         <!-- Single Blog Area -->
         <div class="col-12 col-md-6">
           <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-            <img src="../../img/blog-img/13.jpg" alt="">
+            <img src="../../img/blog-img/14.jpg" alt="">
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="../../posts/yarn-vs-npm" class="blog-headline">
-                <h4>Yarn vs npm?</h4>
+              <a href="../../posts/tim-hieu-ve-new-context-api" class="blog-headline">
+                <h4>Tìm hiểu về New Context Api</h4>
               </a>
               <div class="meta d-flex align-items-center">
                 <a href="../../about">Tran Duc Trung</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <a href="../../posts/yarn-vs-npm">23/07/2018</a>
+                <a href="../../posts/tim-hieu-ve-new-context-api">13/08/2018</a>
               </div>
-              <p>Npm là 1 công cụ dùng để quản lý thư viện lập trình javascript cho Nodejs...</p>
+              <p>- React Context API là 1 tính năng mới được cập nhật trong phiên bản React 16.3...</p>
               <div>
-                <a href="../../posts/yarn-vs-npm"><button class="btn btn-success mt-3">Read more</button></a>
+                <a href="../../posts/tim-hieu-ve-new-context-api"><button class="btn btn-success mt-3">Read more</button></a>
               </div>
             </div>
           </div>

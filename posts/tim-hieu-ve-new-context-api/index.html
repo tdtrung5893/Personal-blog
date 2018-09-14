@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    
+    <title>Tran Duc Trung Blog | Posts</title>
+
+    
+    <link rel="icon" href="../../img/core-img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="../../style.css">
+    <link href="../../agency.min.css" rel="stylesheet">
+    <style type="text/css">
+      table, td, th {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      th, td {
+          text-align: center;
+      }
+      .cedo{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        margin-left: 10px; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: inline;
+      }
+
+      .cedo-1{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: block;
+      }
+
+      p.content-1{
+        font-family: 'Roboto', sans-serif;
+        color: #5a5a5a;
+      }
+
+      .content-2 li, .note {
+        margin-top: 10px;
+        text-indent: 15px; 
+        font-size: 16px; 
+        color: #5a5a5a;
+      }
+    </style>
+</head>
+	<body>
+	    
+	    
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+
+<header class="header-area">
+
+  
+  <div class="top-header-area d-flex justify-content-between align-items-center">
+    
+    <div class="contact-info">
+      <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+      <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+    </div>
+    
+    <div class="follow-us">
+      <span>Follow me</span>
+      <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  
+  <div class="clever-main-menu">
+    <div class="classy-nav-container breakpoint-off">
+      
+      <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+        
+        <a class="nav-brand" href="../../"><img src="../../img/core-img/logo.png" alt=""></a>
+
+        
+        <div class="classy-menu">
+          
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          
+          <div class="classynav">
+            <ul>
+              <li><a href="../../">HOME</a></li>
+              <li><a href="../../about">ABOUT ME</a>
+              <li><a href="../../posts">POSTS</a></li>
+              <li><a href="../../contact">CONTACT ME</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+	    
+
+	    
+	    <!-- ##### Breadcumb Area Start ##### -->
+
+<div class="breadcumb-area">
+  <!-- Breadcumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../../">Home</a></li>
+      <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tìm hiểu về New Context Api</li>
+    </ol>
+  </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Catagory Area Start ##### -->
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/14.jpg);">
+  <div class="blog-details-headline">
+    <h3>Tìm hiểu về New Context Api</h3>
+    <div class="meta d-flex align-items-center justify-content-center">
+      <a href="../../about">Tran Duc Trung</a>
+      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+      <a href="#">13/08/2018</a>
+    </div>
+  </div>
+</div>
+<!-- ##### Catagory Area End ##### -->
+
+<!-- ##### Blog Details Content ##### -->
+<div class="blog-details-content section-padding-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <!-- Blog Details Text -->
+        <div class="blog-details-text">
+          <ul>
+            <p class="content-1"><strong>- React Context API</strong> là 1 tính năng mới được cập nhật trong phiên bản React 16.3</p>
+            <p class="content-1"><strong>- React Context</strong> cung cấp cho chúng ta cơ chế định nghĩa các data store và truy xuất chúng khi cần. Chúng ta không cần phải truyền data thông qua props nữa. Với React Context chúng ta có thể định nghĩa và sử dụng một thứ giống như là "global state" của ứng dụng vậy.</p>
+            <p class="content-1">- Ví dụ:</p>
+            <ul class="content-2">
+              <li>+ Khởi tạo một <strong>Context Provider</strong> thông qua việc sử dụng hàm:<code class="cedo">React.createContext</code></li>
+              <code class="cedo-1 mt-15">
+                const AppContext = React.createContext()<br/>
+                class AppProvider extends Component {<br/>
+                  constructor(props){<br/>
+                    super(props)<br/>
+                    this.state = {<br/>
+                      items: [<br/>
+                        {<br/>
+                          name: 'Ruby On Rails',<br/>
+                        }<br/>
+                      ]<br/>
+                    }<br/>
+                  }<br/>
+              <br/>
+                  render() {<br/>
+                    return (<br/>
+                      &lt;AppContext.Provider value={this.state}&gt;<br/>
+                        {this.props.children}<br/>
+                      &lt;/AppContext.Provider&gt;<br/>
+                    )<br/>
+                  }<br/>
+                }<br/>
+              </code>
+              <li><strong>+ AppContext</strong> sẽ được sử dụng để tạo ra một context provider component. Provider này sẽ chứa dữ liệu chúng ta cần trong state của nó và nó sẽ gói toàn bộ nội dung của component App:</li>
+              <code class="cedo-1 mt-15">
+                class App extends Component{<br/>
+                  render(){<br/>
+                    return  (<br/>
+                      &lt;AppProvider&gt;<br/>
+                        &lt;List /&gt;<br/>
+                      &lt;/AppProvider&gt;<br/>
+                    )<br/>
+                  }<br/>
+                }<br/>
+              </code>
+              <li>   + Sau khi đã setup xong provider, chúng ta có thể truy xuất data bằng cách sử dụng <code class="cedo">Context Consumer</code></li>
+              <code class="cedo-1 mt-15">
+                class List extends Component{<br/>
+                  render(){<br/>
+                    return (&lt;Item /&gt;)<br/>
+                  }<br/>
+                }<br/>
+              <br/>
+                class Item extends Component{<br/>
+                  render(){<br/>
+                    return(<br/>
+                      &lt;AppContext.Consumer&gt;<br/>
+                        {(context) => <br/>
+                          item = context.items<br/>
+                          &lt;tr&gt;<br/>
+                            &lt;td&gt;{item.name}&lt;/td&gt;<br/>
+                          &lt;/tr&gt;<br/>
+                        }<br/>
+                      &lt;/AppContext.Consumer&gt;<br/>
+                    )<br/>
+                  }<br/>
+                }<br/>
+              </code>
+            </ul>
+            <p class="content-1">- Như vậy là chúng ta không còn cần phải truyền prop items xuống component List hay Item nữa. Tất cả dữ liệu đã được xử lý bởi cơ chế của React Context.</p>
+          </ul>
+          <div class="post-tags">
+            <ul>
+              <li><a href="../../tags/reactjs">ReactJs</a></li>
+            </ul>
+          </div>
+          <!-- Tags -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-posts section-padding-100-0">
+    <div class="section-heading">
+      <h3>More posts</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="../../img/blog-img/14.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="../../posts/tim-hieu-ve-presentational-va-container-components" class="blog-headline">
+                <h4>Tìm hiểu về Presentational/Container Components</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="../../about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="../../posts/tim-hieu-ve-presentational-va-container-components">12/08/2018</a>
+              </div>
+              <p>- Container Components: Là những component mà nhiệm vụ chính của nó là liên kết với...</p>
+              <div>
+                <a href="../../posts/tim-hieu-ve-presentational-va-container-components"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="250ms">
+            <img src="../../img/blog-img/8.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="../../posts/git-va-nhung-dieu-co-ban" class="blog-headline">
+                <h4>Git và những điều cơ bản</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="../../about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="../../posts/git-va-nhung-dieu-co-ban">14/07/2018</a>
+              </div>
+              <h6>1. Thế nào là Repository, branch?</h6>
+              <p>- Repository: Là kho lưu trữ toàn bộ thông tin của 1 project...</p>
+              <div>
+                <a href="../../posts/git-va-nhung-dieu-co-ban"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	    
+
+	    
+	    <footer class="footer-area">
+    
+    <div class="top-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="footer-logo">
+                        <a href="../../"><img src="../../img/core-img/logo2.png" alt=""></a>
+                    </div>
+                    
+                    <p><a href="#">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+        
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+            <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+        </div>
+        
+        <div class="follow-us">
+            <span>Follow me</span>
+            <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+	    
+
+	    
+	    
+<script src="../../js/jquery/jquery-2.2.4.min.js"></script>
+
+<script src="../../js/bootstrap/popper.min.js"></script>
+
+<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+<script src="../../js/plugins/plugins.js"></script>
+
+<script src="../../js/active.js"></script>
+	</body>
+</html>

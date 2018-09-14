@@ -15,7 +15,19 @@
   </url>
   
   <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/form-va-refs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/composition-vs-inheritance-va-react-routers/</loc>
+  </url>
+  
+  <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/flux-vs-redux/</loc>
   </url>
   
   <url>
@@ -28,6 +40,14 @@
   
   <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/gulp-vs-webpack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/handling-events-va-conditional-rendering/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/list-va-key-trong-react/</loc>
   </url>
   
   <url>
@@ -67,11 +87,23 @@
   </url>
   
   <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-new-context-api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-presentational-va-container-components/</loc>
+  </url>
+  
+  <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-reactjs/</loc>
   </url>
   
   <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-ruby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-state-va-lifecycle/</loc>
   </url>
   
   <url>
@@ -95,6 +127,46 @@
   </url>
   
   <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/nodejs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/reactjs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/ruby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/sql/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/web/</loc>
+  </url>
+  
+  <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/categories/</loc>
     <priority>0</priority>
   </url>
@@ -106,6 +178,11 @@
   
   <url>
     <loc>https://tdtrung5893.github.io/Personal-blog/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tdtrung5893.github.io/Personal-blog/tags/</loc>
     <priority>0</priority>
   </url>
   

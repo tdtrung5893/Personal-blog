@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    
+    <title>Tran Duc Trung Blog | Posts</title>
+
+    
+    <link rel="icon" href="../../img/core-img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="../../style.css">
+    <link href="../../agency.min.css" rel="stylesheet">
+    <style type="text/css">
+      table, td, th {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      th, td {
+          text-align: center;
+      }
+      .cedo{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        margin-left: 10px; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: inline;
+      }
+
+      .cedo-1{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: block;
+      }
+
+      p.content-1{
+        font-family: 'Roboto', sans-serif;
+        color: #5a5a5a;
+      }
+
+      .content-2 li, .note {
+        margin-top: 10px;
+        text-indent: 15px; 
+        font-size: 16px; 
+        color: #5a5a5a;
+      }
+    </style>
+</head>
+	<body>
+	    
+	    
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+
+<header class="header-area">
+
+  
+  <div class="top-header-area d-flex justify-content-between align-items-center">
+    
+    <div class="contact-info">
+      <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+      <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+    </div>
+    
+    <div class="follow-us">
+      <span>Follow me</span>
+      <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  
+  <div class="clever-main-menu">
+    <div class="classy-nav-container breakpoint-off">
+      
+      <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+        
+        <a class="nav-brand" href="../../"><img src="../../img/core-img/logo.png" alt=""></a>
+
+        
+        <div class="classy-menu">
+          
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          
+          <div class="classynav">
+            <ul>
+              <li><a href="../../">HOME</a></li>
+              <li><a href="../../about">ABOUT ME</a>
+              <li><a href="../../posts">POSTS</a></li>
+              <li><a href="../../contact">CONTACT ME</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+	    
+
+	    
+	    <!-- ##### Breadcumb Area Start ##### -->
+
+<div class="breadcumb-area">
+  <!-- Breadcumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../../">Home</a></li>
+      <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tìm hiểu về State và LifeCycle</li>
+    </ol>
+  </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Catagory Area Start ##### -->
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/14.jpg);">
+  <div class="blog-details-headline">
+    <h3>Tìm hiểu về State và LifeCycle</h3>
+    <div class="meta d-flex align-items-center justify-content-center">
+      <a href="../../about">Tran Duc Trung</a>
+      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+      <a href="#">05/08/2018</a>
+    </div>
+  </div>
+</div>
+<!-- ##### Catagory Area End ##### -->
+
+<!-- ##### Blog Details Content ##### -->
+<div class="blog-details-content section-padding-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <!-- Blog Details Text -->
+        <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">State là gì?</h4>
+            <p class="content-1">- Trong Reactjs, <strong>State</strong> được dùng để biểu diễn trạng thái của Component.</p>
+            <p class="content-1">- State là Private và chỉ có thể thay đổi ở bên trong của chính Component đó</p>
+            <p class="content-1"><strong>- Để khởi tạo State ta dùng lệnh</strong><code class="cedo">this.state</code>.Ví dụ:</p>
+            <code class="cedo-1">
+              import React, {Component} from 'react';<br/>
+              class App extends Component {<br/>
+                constructor(props){<br/>
+                  super(props)<br/>
+                  this.state = {<br/>
+                    name: "Tran Duc Trung"    // khởi tạo state bằng cách thêm vào 1 object<br/>
+                  }<br/>
+                }<br/>
+                render(){<br/>
+                  return(&lt;h1&glt;{ this.state.name }&lt;/h1&gt;)    // gọi đến state this.state.name<br/>
+                }<br/>
+              }<br/>
+            </code>
+            <p class="content-1"><strong>- Để thay đổi giá trị của State ta dùng lệnh</strong><code class="cedo">this.setState</code>.Ví dụ:</p>
+            <code class="cedo-1">
+              import React, {Component} from 'react';<br/>
+              class App extends Component {<br/>
+                constructor(props){<br/>
+                  super(props)<br/>
+                  this.state = {<br/>
+                    name: "Tran Duc Trung"<br/>
+                  }<br/>
+                  this.handleChangeState = this.handleChangeState.bind(this)<br/>
+                }<br/>
+                handleChangeState(){<br/>
+                  this.setState({<br/>
+                    name: "Hello tdtrung93"<br/>
+                  })<br/>
+                }<br/>
+                render(){<br/>
+                  return(<br/>
+                    &lt;h1&gt;{ this.state.name }&lt;/h1&gt;<br/>
+                    &lt;button onClick={this.handleChangeState}&gt;Change State&lt;/button&gt;<br/>
+                  )<br/>
+                }<br/>
+              }<br/>
+            </code>
+            <p class="content-1">- Đoạn code trên sẽ render ra 1 nút button "Change State" và khi Click vào button đó thì trạng thái name của Component App sẽ thay đổi và hàm render sẽ được render lại</strong></p>
+          </ul>
+          <ul>
+            <h4 class="py-4">Thế nào là LifeCyle?</h4>
+            <p class="content-1"><strong>- Lifecycle</strong> trong ReactJS dùng để chỉ vòng đời của 1 Component, thực chất là nó bao gồm những method được gọi là Lifecycle methods, đây là những method mà ta có thể gọi tại 1 thời điểm nào đó trong vòng đời của 1 Component. Có 3 loại lifecycle method là Mounting, Updating, Unmounting.</p>
+            <ul class="content-2">
+              <li><strong>+ Mounting:</strong> Đây là những method được gọi trong lần Component được render lần đầu tiên. Có 4 method Mounting lifecycle method là:</li>
+              <ul style="margin-left: 50px;">
+                <li style="list-style: disc;"><i>Constructor():</i> Đây là method đầu tiên được gọi khi khởi tạo Component, chúng ta có thể thiết lập State và ràng buộc các class methods ở trong này</li>
+                <li style="list-style: disc;"><i>ComponentWillMount():</i> Method này được gọi trước khi phương thức render được gọi lần đầu tiên vì vậy method này chỉ xuất hiện 1 lần duy nhất, những lần render sau method này sẽ không được gọi nữa</li>
+                <li style="list-style: disc;"><i>Render():</i> Method này là bắt buộc, nó nhận vào các state, props và trả ra các element</li>
+                <li style="list-style: disc;"><i>ComponentDidMount():</i> Method này được thực thi khi 1 component được render. Đây là thời điểm thích hợp nhất để thực hiện việc giao tiếp với server để lấy dữ liệu từ API.</li>
+              </ul>
+              <li><strong>+ Updating:</strong> Các lifecycle methods của Updating sẽ được gọi bắt đầu với lần render thứ hai. Có 5 method Updating lifecycle method là:</li>
+              <ul style="margin-left: 50px;">
+                <li style="list-style: disc;"><i>ComponentWillReceiveProps(nextProps):</i> Method này sẽ được gọi khi thuộc tính props được update và trước khi component được render lại</li>
+                <li style="list-style: disc;"><i>ShouldComponentUpdate(nextProps, nextState):</i> Method này sẽ return kết quả về true hoặc false, nếu false thì tất cả những method phía sau sẽ không được thực hiện</li>
+                <li style="list-style: disc;"><i>ComponentWillUpdate(nextProps, nextState):</i> Được gọi khi chúng ta update state của component trước khi nó render lại.</li>
+                <li style="list-style: disc;"><i>Render()</i></li>
+                <li style="list-style: disc;"><i>ComponentDidUpdate(prevProps, prevState):</i> Sau khi render lại những thay đổi xong thì method này sẽ được gọi</li>
+              </ul>
+              <li><strong>+ Unmounting:</strong> Lifecycle chỉ có 1 method duy nhất là componentWillUnmount() và nó được gọi khi chúng ta unmout 1 component kiểu như xóa nó khỏi react.</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- Ví dụ về thứ tự được gọi của lifecycle methods:</strong></p>
+            <code class="cedo-1">
+              import React, {Component} from 'react';<br/>
+              class LifeCycle extends Component {<br/>
+                constructor(props){<br/>
+                  super(props)<br/>
+                  this.state = {<br/>
+                    title: "Content",<br/>
+                  }<br/>
+                  this.handleChangeContent = this.handleChangeContent.bind(this)<br/>
+                  console.log("constructor");<br/>
+                }<br/>
+            <br/>
+                handleChangeContent(){<br/>
+                  this.setState({<br/>
+                    title: "Changed Content"<br/>
+                  })<br/>
+                }<br/>
+            <br/>
+                render(){<br/>
+                  return(<br/>
+                    &lt;div className="card"&gt;<br/>
+                      &lt;div className="card-header"&gt;ReacJS&lt;/div&gt;<br/>
+                      &lt;div className="card-block"&gt;<br/>
+                        &lt;h4 className="card-title"&gt;Special title treatment&lt;/h4&gt;<br/>
+                        &lt;Post content = { this.state.title } className="card-text"&gt;&lt;/Post&gt;<br/>
+                        &lt;button onClick={this.handleChangeContent} type="button" className="btn btn-primary"&gt;Change content&lt;/button&gt;<br/>
+                      &lt;/div&gt;<br/>
+                    &lt;/div&gt;<br/>
+                  );<br/>
+                }<br/>
+              }<br/>
+            <br/>
+              class Post extends Component {<br/>
+                componentWillMount(){<br/>
+                  console.log("componentWillMount");<br/>
+                }<br/>
+            <br/>
+                componentDidMount(){<br/>
+                  console.log("componentDidMount");<br/>
+                }<br/>
+                componentWillReceiveProps(newProps) {<br/>
+                  console.log("componentWillReceiveProps")<br/>
+                }<br/>
+            <br/>
+                shouldComponentUpdate(nextProps, nextState){<br/>
+                  console.log("shouldComponentUpdate");<br/>
+                  return true;<br/>
+                }<br/>
+                componentWillUpdate(){<br/>
+                  console.log("componentWillUpdate");<br/>
+                }<br/>
+            <br/>
+                componentDidUpdate(){<br/>
+                  console.log("componentDidUpdate");<br/>
+                }<br/>
+            <br/>
+                render(){<br/>
+                  console.log("render")<br/>
+                  return(<br/>
+                    &lt;div&gt;<br/>
+                      &lt;h3&gt;{this.props.content}&lt;/h3&gt;<br/>
+                    &lt;/div&gt;<br/>
+                  );<br/>
+                }<br/>
+              }<br/>
+            <br/>
+              export default LifeCycle;<br/>
+            </code>
+            <p class="content-1"><strong>Kết quả render lần đầu tiên sẽ lần lượt là:</strong></p>
+            <ul class="content-2">
+              <li><i>constructor</i></li>
+              <li><i>componentWillMount</i></li>
+              <li><i>render</i></li>
+              <li><i>componentDidMount</i></li>
+            </ul>
+            <p class="content-1 mt-15"><strong>Sau khi nhấn nút Change content thì quá trình update sẽ diễn ra và các lifecycle khác sẽ thực hiện theo thứ tự:</strong></p>
+            <ul class="content-2">
+              <li><i>componentWillRecevieProps</i></li>
+              <li><i>shouldComponentUpdate</i></li>
+              <li><i>componentWillUpdate</i></li>
+              <li><i>render</i></li>
+              <li><i>componentDidUpdate</i></li>
+            </ul>
+          </ul>
+          <div class="post-tags">
+            <ul>
+              <li><a href="../../tags/reactjs">ReactJs</a></li>
+            </ul>
+          </div>
+          <!-- Tags -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-posts section-padding-100-0">
+    <div class="section-heading">
+      <h3>More posts</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="../../img/blog-img/14.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="../../posts/tim-hieu-ve-reactjs" class="blog-headline">
+                <h4>Tìm hiểu về ReactJs</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="../../about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="../../posts/tim-hieu-ve-reactjs">03/08/2018</a>
+              </div>
+              <p><strong>- ReactJs</strong> là 1 thư viện JavaScript được tạo ra bởi facebook và instagram...</p>
+              <div>
+                <a href="../../posts/tim-hieu-ve-reactjs"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="../../img/blog-img/14.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="../../posts/handling-events-va-conditional-rendering" class="blog-headline">
+                <h4>Handling Events và Conditional Rendering</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="../../about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="../../posts/handling-events-va-conditional-rendering">06/08/2018</a>
+              </div>
+              <p>- Handling Events dùng để xử lý sử kiện trong React, nó cũng tương...</p>
+              <div>
+                <a href="../../posts/handling-events-va-conditional-rendering"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	    
+
+	    
+	    <footer class="footer-area">
+    
+    <div class="top-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="footer-logo">
+                        <a href="../../"><img src="../../img/core-img/logo2.png" alt=""></a>
+                    </div>
+                    
+                    <p><a href="#">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+        
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+            <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+        </div>
+        
+        <div class="follow-us">
+            <span>Follow me</span>
+            <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+	    
+
+	    
+	    
+<script src="../../js/jquery/jquery-2.2.4.min.js"></script>
+
+<script src="../../js/bootstrap/popper.min.js"></script>
+
+<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+<script src="../../js/plugins/plugins.js"></script>
+
+<script src="../../js/active.js"></script>
+	</body>
+</html>

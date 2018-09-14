@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    
+    <title>Tran Duc Trung Blog | Home</title>
+
+    
+    <link rel="icon" href="../../img/core-img/favicon.ico">
+
+    
+    <link rel="stylesheet" href="../../style.css">
+    <link href="../../agency.min.css" rel="stylesheet">
+    <style type="text/css">
+      table, td, th {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      th, td {
+          text-align: center;
+      }
+      .cedo{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        margin-left: 10px; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: inline;
+      }
+
+      .cedo-1{
+        font-size: 15px; 
+        margin-bottom: 15px; 
+        color: #5a5a5a; 
+        background-color: #eee; 
+        border-radius: 3px;
+        padding: 5px; 
+        display: block;
+      }
+
+      p.content-1{
+        font-family: 'Roboto', sans-serif;
+        color: #5a5a5a;
+      }
+
+      .content-2 li, .note {
+        margin-top: 10px;
+        text-indent: 15px; 
+        font-size: 16px; 
+        color: #5a5a5a;
+      }
+    </style>
+</head>
+	<body>
+	    
+	    
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+
+<header class="header-area">
+
+  
+  <div class="top-header-area d-flex justify-content-between align-items-center">
+    
+    <div class="contact-info">
+      <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+      <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+    </div>
+    
+    <div class="follow-us">
+      <span>Follow me</span>
+      <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  
+  <div class="clever-main-menu">
+    <div class="classy-nav-container breakpoint-off">
+      
+      <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+        
+        <a class="nav-brand" href="../../"><img src="../../img/core-img/logo.png" alt=""></a>
+
+        
+        <div class="classy-menu">
+          
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          
+          <div class="classynav">
+            <ul>
+              <li><a href="../../">HOME</a></li>
+              <li><a href="../../about">ABOUT ME</a>
+              <li><a href="../../posts">POSTS</a></li>
+              <li><a href="../../contact">CONTACT ME</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+	    
+
+	    
+	    <!-- ##### Breadcumb Area Start ##### -->
+
+<div class="breadcumb-area">
+  <!-- Breadcumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../../">Home</a></li>
+      <li class="breadcrumb-item"><a href="../../posts">Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Flux vs Redux</li>
+    </ol>
+  </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Catagory Area Start ##### -->
+<div class="clever-catagory blog-details bg-img d-flex align-items-center justify-content-center p-3 height-400" style="background-image: url(../../img/blog-img/14.jpg);">
+  <div class="blog-details-headline">
+    <h3>Flux vs Redux</h3>
+    <div class="meta d-flex align-items-center justify-content-center">
+      <a href="../../about">Tran Duc Trung</a>
+      <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+      <a href="#">11/08/2018</a>
+    </div>
+  </div>
+</div>
+<!-- ##### Catagory Area End ##### -->
+
+<!-- ##### Blog Details Content ##### -->
+<div class="blog-details-content section-padding-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <!-- Blog Details Text -->
+        <div class="blog-details-text">
+          <ul>
+            <h4 class="py-4">Flux Concept</h4>
+            <p class="content-1"><strong>- Flux</strong> là 1 kiểu kiến trúc phát triển ứng dụng dùng để thiết kế UI trong các ứng dụng web. Nó giúp làm việc với các components của React một cách dễ dàng bằng cách sử dụng luồng dữ liệu một chiều.</p>
+            <p class="content-1">- Luồng dữ liệu 1 chiều hiểu 1 cách đơn giản là dữ liệu luôn chỉ di chuyển theo một và chỉ một hướng duy nhất. Khi một dữ liệu mới xuất hiện, luồng sẽ bắt đầu lại từ đầu.</p>
+            <p class="content-1"><strong>- Các thành phần trong kiến trúc Flux:</strong></p>
+            <ul class="content-2">
+              <li><strong>+ Store:</strong> Nơi xử lí hành động liên quan đến dữ liệu, và gửi đi thông báo cho các listener khi dữ liệu thay đổi.</li>
+              <li><strong>+ Dispatcher:</strong> Giống như 1 trạm trung chuyển, là nơi điều hướng các action đến các store tương ứng</li>
+              <li><strong>+ Action:</strong> Là nơi tạo ra các action và phát tán nó đến những nơi đăng ký nhận action đó thông qua Dispatcher</li>
+              <li><strong>+ View:</strong> Là nơi nhận dữ liệu và các cập nhật từ Store và gọi các actions. Trong React View chính là các Components</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- Nguyên tắc hoạt động của Flux:</strong></p>
+            <ul class="content-2">
+              <li>+ Đầu tiên View sẽ thông qua Store để lấy ra trạng thái cuối cùng và hiển thị cho người dùng, đồng thời View cũng sẽ đăng ký với Store rằng khi nào trạng thái thay đổi thì sẽ thông báo cho View</li>
+              <li>+ Khi người dùng tương tác với ứng dụng, làm thay đổi trạng thái của ứng dụng thì Action thông qua View sẽ tạo ra 1 action tương ứng với hành động làm thay đổi trạng thái vừa rồi. Action vừa được tạo ra đó sẽ bao gồm những thông tin sau: </li>
+              <ul style="margin-left: 50px;">
+                <li style="list-style: disc;"><i>Action_type:</i> Tên của action (ADD_STUDENT, REMOVE_STUDENT...)</li>
+                <li style="list-style: disc;"><i>Action_payload:</i> thông tin chi tiết của nội dung muốn gửi</li>
+              </ul>  
+              <li>+ Sau khi tạo ra action mới thì Action sẽ gửi toàn bộ thông tin của action đó đến Dispatcher và tại đây Dispatcher có nhiệm vụ là truyền tải nội dung đến các Store đã đăng ký lắng nghe sự kiện thay đổi từ trước đó</li>
+              <li>+ Store sau khi nhận thông tin tiến hành cập nhật dữ liệu</li>
+              <li>+ Sau khi cập nhật Store sẽ gửi sự kiện tới View đã đăng ký lúc trước để tiến hành cập nhật hiển thị cho người dùng</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>App demo Flux: </strong><a href="https://github.com/tdtrung5893/demo-flux">https://github.com/tdtrung5893/demo-flux</a></p>
+            <h4 class="py-4">Redux</h4>
+            <p class="content-1"><strong>- Redux</strong> là 1 thư viện giúp chúng ta quản lý các trạng thái (state) 1 cách tốt hơn. Thay vì phải truyền state qua từng Component thì Redux sẽ tạo ra 1 store duy nhất dùng để thay đổi dữ liệu</p>
+            <p class="content-1"><strong>- Redux gồm có 3 thành phần chính là: </strong></p>
+            <ul class="content-2">
+              <li><strong>+ Store:</strong> Store là 1 object lưu trữ state của toàn bộ ứng dụng</li>
+              <li><strong>+ Action Creators:</strong> Là nơi tạo ra các action dùng để mô tả event, </li>
+              <li><strong>+ Reducer:</strong> Là 1 fuction nhận đầu vào là state và các mô tả về event và chỉ dựa trên đó để trả về state tiếp theo.</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- Nguyên lý hoạt động của Redux:</strong></p>
+            <ul class="content-2">
+              <li>+ Khi có 1 sự kiện (event) thì sẽ phát sinh ra 1 action mô tả những gì đang xảy ra.</li>
+              <li>+ Action sẽ thực hiện điều phối Reducer xử lý event.</li>
+              <li>+ Reducer dựa vào những mô tả của Action để biết cần thực hiện thay đổi gì trên State và thực hiện update.</li>
+              <li>+ Khi State được update thì các trigger đang theo dõi state đó sẽ nhận được thông tin update</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>- 3 nguyên tắc trong Redux:</strong></p>
+            <ul class="content-2">
+              <li>+ Store luôn là nguồn dữ liệu đúng và tin cậy duy nhất.</li>
+              <li>+ State chỉ được phép đọc, cách duy nhất để thay đổi State là phát sinh một Action, và dể Reducer thay đổi State.</li>
+              <li>+ Các fuction Reducer phải là Pure function (với cùng 1 đầu vào chỉ cho ra 1 đầu ra duy nhất)</li>
+            </ul>
+            <p class="content-1 mt-15"><strong>App demo Redux: </strong><a href="https://github.com/tdtrung5893/redux-demo">https://github.com/tdtrung5893/redux-demo</a></p>
+          </ul>
+          <div class="post-tags">
+            <ul>
+              <li><a href="../../tags/reactjs">ReactJs</a></li>
+            </ul>
+          </div>
+          <!-- Tags -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-posts section-padding-100-0">
+    <div class="section-heading">
+      <h3>More posts</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="../../img/blog-img/14.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="../../posts/form-va-refs" class="blog-headline">
+                <h4>Form & Refs</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="../../about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="../../posts/form-va-refs">09/08/2018</a>
+              </div>
+              <p>- Trong React, các form như &lt;input&gt;, &lt;textarea&gt; và &lt;select&gt; thường có value được lưu vào state của Component...</p>
+              <div>
+                <a href="../../posts/form-va-refs"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Single Blog Area -->
+        <div class="col-12 col-md-6">
+          <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <img src="../../img/blog-img/14.jpg" alt="">
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="../../posts/tim-hieu-ve-presentational-va-container-components" class="blog-headline">
+                <h4>Tìm hiểu về Presentational/Container Components</h4>
+              </a>
+              <div class="meta d-flex align-items-center">
+                <a href="../../about">Tran Duc Trung</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="../../posts/tim-hieu-ve-presentational-va-container-components">12/08/2018</a>
+              </div>
+              <p>- Container Components: Là những component mà nhiệm vụ chính của nó là liên kết với...</p>
+              <div>
+                <a href="../../posts/tim-hieu-ve-presentational-va-container-components"><button class="btn btn-success mt-3">Read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	    
+
+	    
+	    <footer class="footer-area">
+    
+    <div class="top-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="footer-logo">
+                        <a href="../../"><img src="../../img/core-img/logo2.png" alt=""></a>
+                    </div>
+                    
+                    <p><a href="#">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+        
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +84 164 806 2543</a>
+            <a href="#"><span>Email:</span> tdtrung5893@gmail.com</a>
+        </div>
+        
+        <div class="follow-us">
+            <span>Follow me</span>
+            <a href="https://www.facebook.com/tdtrung93"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/tdtrung93"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/tdtrung5893"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+	    
+
+	    
+	    
+<script src="../../js/jquery/jquery-2.2.4.min.js"></script>
+
+<script src="../../js/bootstrap/popper.min.js"></script>
+
+<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+<script src="../../js/plugins/plugins.js"></script>
+
+<script src="../../js/active.js"></script>
+	</body>
+</html>

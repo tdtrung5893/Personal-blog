@@ -12,6 +12,24 @@
     
     <item>
       <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/form-va-refs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/form-va-refs/</guid>
+      <description>Home Posts Form &amp; Refs    Form &amp; Refs Tran Duc Trung  09/08/2018     Form - Trong React, các form như &amp;lt;input&amp;gt;, &amp;lt;textarea&amp;gt; và &amp;lt;select&amp;gt; thường có value được lưu vào state của Component. Khi người dùng nhập 1 giá trị vào form thì giá trị đó sẽ được cập nhật thông qua hàm setState. Có 2 loại Form là Controlled Form và UnControlled Form</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/composition-vs-inheritance-va-react-routers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/composition-vs-inheritance-va-react-routers/</guid>
+      <description>Home Posts Composition vs Inheritance và React Routers    Composition vs Inheritance và React Routers Tran Duc Trung  10/08/2018     Composition vs Inheritance - Trong React, thuộc tính props của Component có thể được truyền vào các giá trị bất kỳ như là: number, string, object, React Element, thậm chí là cả 1 function... Vì vậy ta có thể cấu hình 1 Component với thuộc tính props của nó = Kỹ thuật này được gọi là Composition</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://tdtrung5893.github.io/Personal-blog/posts/ecmascript-2015-es6-la-gi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -19,6 +37,16 @@
       <description>Home Posts ECMAScript2015 (ES6) và Arrow Function    ECMAScript2015 (ES6) và Arrow Function Tran Duc Trung  25/07/2018     ECMAScript2015 (ES6) là gì? - ES6 là chữ viết tắt của ECMAScript 6, là một tập hợp các kỹ thuật nâng cao của Javascript và là phiên bản mới nhất của chuẩn ECMAScript
 - Những điểm mới của ECMAScript2015
  + Arrow function: Tạo hàm bằng cách sử dụng dấu mũi tên =  + Block Scoped: Định nghĩa biến với từ khóa let, cách định nghĩa này thì biến chỉ tồn tại trong phạm vi khối của nó (Block Scope)  + Destructuring Assignments: Khởi tạo các biến từ một mảng bằng một dòng code.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/flux-vs-redux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/flux-vs-redux/</guid>
+      <description>Home Posts Flux vs Redux    Flux vs Redux Tran Duc Trung  11/08/2018     Flux Concept - Flux là 1 kiểu kiến trúc phát triển ứng dụng dùng để thiết kế UI trong các ứng dụng web. Nó giúp làm việc với các components của React một cách dễ dàng bằng cách sử dụng luồng dữ liệu một chiều.
+- Luồng dữ liệu 1 chiều hiểu 1 cách đơn giản là dữ liệu luôn chỉ di chuyển theo một và chỉ một hướng duy nhất.</description>
     </item>
     
     <item>
@@ -47,6 +75,26 @@
       
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/gulp-vs-webpack/</guid>
       <description>Home Posts Gulp vs Webpack?    Gulp vs Webpack? Tran Duc Trung  24/07/2018     Gulp là gì?  Gulp là 1 công cụ giúp bạn tự động hóa nhiều task (nhiệm vụ) trong quá trình phát triển web. Nó thường được sử dụng để làm các tác vụ front end như:  + Tạo ra 1 web server  + Auto reload server khi lưu thay đổi 1 file nào đó  + Sử dụng các Preprocessor giống như SASS, LESS, Stylus.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/handling-events-va-conditional-rendering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/handling-events-va-conditional-rendering/</guid>
+      <description>Home Posts Handling Events và Conditional Rendering    Handling Events và Conditional Rendering Tran Duc Trung  06/08/2018     Handling Events trong React - Handling Events dùng để xử lý sử kiện trong React, nó cũng tương tự như handling event trên DOM Element, tuy nhiên có 1 số điểm khác nhau về cách sử dụng. Ví dụ:
+import React, {Component} from &#39;react&#39;; class App extends Component { handleAlertText(){ alert(&#39;Hello World&#39;); } render() { return( &amp;lt;button onClick={ this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/list-va-key-trong-react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/list-va-key-trong-react/</guid>
+      <description>Home Posts List &amp; Key    List &amp; Key Tran Duc Trung  07/08/2018     - Trong React list và key được dùng để render nhiều Component khác nhau. Key là 1 thuộc tính giúp React xác định item nào được thêm mới, thay đổi hay gỡ bỏ khi chúng ta render nhiều item cùng 1 lúc.
+- Giá trị của Key phải là duy nhất để phân biệt 1 item với các item khác.</description>
     </item>
     
     <item>
@@ -139,6 +187,25 @@ npm install axios --save-dev  - Các Request có thể được tạo ra bằng 
     
     <item>
       <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-new-context-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-new-context-api/</guid>
+      <description>Home Posts Tìm hiểu về New Context Api    Tìm hiểu về New Context Api Tran Duc Trung  13/08/2018     - React Context API là 1 tính năng mới được cập nhật trong phiên bản React 16.3
+- React Context cung cấp cho chúng ta cơ chế định nghĩa các data store và truy xuất chúng khi cần. Chúng ta không cần phải truyền data thông qua props nữa.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-presentational-va-container-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-presentational-va-container-components/</guid>
+      <description>Home Posts Tìm hiểu về Presentational/Container Components    Tìm hiểu về Presentational/Container Components Tran Duc Trung  12/08/2018     Container Components - Container Components: Là những component mà nhiệm vụ chính của nó là liên kết với Store của project và fetching dữ liệu. Sau khi đã fetching dữ liệu thì các container component sẽ có những xử lý logic và truyền kết quả cuối cùng tới những component thuần hay còn gọi là Presentational Component.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-reactjs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -156,6 +223,18 @@ npm install axios --save-dev  - Các Request có thể được tạo ra bằng 
       <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-ruby/</guid>
       <description>Home Posts Tìm hiểu về Ruby    Tìm hiểu về Ruby Tran Duc Trung  15/07/2018     1) Các đặc điểm cơ bản của lập trình hướng đối tượng. Chúng được thể hiện như thế nào trong Ruby Lập trình hướng đối tượng có 4 đặc điểm cơ bản:
 - Tính trừu tượng (Abstraction): Là trừu tượng hóa và định nghĩa 1 cách khái quát các tính chất, thuộc tính của 1 đối tượng.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-state-va-lifecycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tdtrung5893.github.io/Personal-blog/posts/tim-hieu-ve-state-va-lifecycle/</guid>
+      <description>Home Posts Tìm hiểu về State và LifeCycle    Tìm hiểu về State và LifeCycle Tran Duc Trung  05/08/2018     State là gì? - Trong Reactjs, State được dùng để biểu diễn trạng thái của Component.
+- State là Private và chỉ có thể thay đổi ở bên trong của chính Component đó
+- Để khởi tạo State ta dùng lệnhthis.state.Ví dụ:
+import React, {Component} from &#39;react&#39;; class App extends Component { constructor(props){ super(props) this.</description>
     </item>
     
     <item>
